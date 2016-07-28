@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Kalene Nicole
+	</title>
+<!-- Meta Stuff -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="UTF-8">
+<meta name="description" content="Kalene Nicole's Website">
+<meta name="keywords" content="HTML,CSS, Kalene,Kalene Nicole,JavaScript,CSS Animation">
+<meta name="author" content="Kalene Nicole">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- Link to main css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/main.css">
+<!-- Link to about css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/about.css">
+<!-- Link to contact css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/contact.css">
+<!-- Link to portfolio css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/portfolio.css">
+<!-- Link to sketches css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/doodles.css">
+<!-- Link to css reset -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/reset.css">
+</head>
+<body>
+
+	{% include header.html %}
+
+		{{content}}
+
+	{% include footer.html %}
+
+</body>
+<!-- jQuery -->
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+</html>
