@@ -1,3 +1,20 @@
-h1 {
-  color: blue;
-  font-size: 2em; }
+header.header {
+  text-align: center;
+  background: #F5FAF0;
+  padding-bottom: 15px; }
+  header.header h1 {
+    font-family: "Sacramento", cursive;
+    color: #F5ABAB;
+    font-size: 3em;
+    margin: 0;
+    padding: 20px; }
+  header.header li {
+    font-family: "Open Sans Condensed", sans-serif;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-size: 1.4em;
+    color: #95AAA3;
+    transition: transform; }
+  header.header li:hover {
+    background: #F0F7E9; }

@@ -1,8 +1,45 @@
 ---
+
 ---
 
-h1 {
-	color:blue;
-	font-size:2em;
-	
+$sacramento: 'Sacramento', cursive;
+$opensans:'Open Sans Condensed', sans-serif;
+$grey: #95AAA3;
+$pink: #F5ABAB;
+$lightpink: #fffcfc;
+$darkgreen: #73A493;
+$limegreen: #BCDD9A;
+$lightgreen: #DDF0C9;
+$verylightgreen: #F0F7E9;
+$lightestgreen: #F5FAF0;
+  
+  // ---------------------------------
+
+header.header {
+  text-align: center;
+  background: $lightestgreen;
+  padding-bottom:15px;
+  
+  h1 {
+    font-family: $sacramento;
+    color: $pink;
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+  li {
+    font-family: $opensans;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-size: 1.4em;
+    color: $grey;
+    transition: transform ()
+  }
+  
+  li:hover {
+    background: $verylightgreen;
+  }
 }
