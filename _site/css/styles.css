@@ -14,7 +14,6 @@ header.header {
     display: inline;
     padding: 10px;
     font-size: 1.4em;
-    color: #95AAA3;
-    transition: transform; }
+    color: #95AAA3; }
   header.header li:hover {
     background: #F0F7E9; }
