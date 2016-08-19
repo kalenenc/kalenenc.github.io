@@ -16,6 +16,14 @@ $gutter: 20px;
   
   // ---------------------------------
 
+// ---- General ----
+
+.h2 {
+  font-family: $sacramento;
+  font-size: 5em;
+  color: $pink;
+}
+
 // ---- Header ----
 
 body, header.header {
@@ -69,11 +77,141 @@ p {
  
 }
 
+
+// ---- First Section ----
+
+.page-wrap {
+  padding:100px 50px;
+}
+
+.module {
+  background:$lightgreen;
+  text-align:center;
+  padding:30px;
+}
+
+section.section1 {
+
+  
+    .star {
+        width:80%;
+        margin: 4.5em auto;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .star:hover {
+        transform:scale(1.2) rotate(5deg);
+        cursor:pointer;
+
+      }
+
+
+
+      
+  
+}
+
+// ---- Second Section ----
+
+.section2 {
+  .grid {
+    margin-top:300px;
+  }
+
+
+}
+
+.computer {
+  margin:5em 0;
+}
+
+.social-media {
+    li {
+      margin-top:100px;
+      list-style-type: none;
+      display:inline-block;
+      padding:10px;
+      font-size:2em;
+    }
+
+    .fa {
+      background:white;
+      padding:10px;
+      border-radius:10px;
+      box-shadow: 0px 5px 0px #888888;
+      transition:all ;
+    }
+
+    .fa-twitter {
+
+    }
+
+    .fa-github {
+
+    }
+
+    .fa-dribbble {
+
+    }
+
+    .fa-linkedin {
+
+    }
+
+
+}
+
+// ---- Third Section ----
+
+.section3 {
+  background:$lightgreen;
+  .h2 {
+    margin:200px auto;
+  }
+
+  ul {
+    text-align:center;
+
+    li {
+      display:inline-block;
+      padding-left:50px;
+    }
+  }
+}
+
+// ---- Fourth Section ----
+
+.section4 {
+  .grid {
+    margin-top:300px;
+    overflow:visible;
+    margin-bottom:
+  }
+}
+
+.pencil {
+  width:30%;
+  transform:rotate(135deg);
+  
+}
+
+// ---- Fifth Section ----
+
+
+
+
+
+
+
+
+
+
 // ---- Grid ----
 
 .grid {
   width: 100%;
   padding-left: $gutter;
+  overflow: hidden;
 }
 
 [class*='col-1'] {
@@ -104,37 +242,6 @@ p {
 .col-3-4 {
   width: 75%;
 }
-
-.module {
-  background: black;
-}
-
-// ---- First Section ----
-
-section.section1 {
-  .grid {
-    margin-top: 100px;
-      h2 {
-        font-family: $sacramento;
-        color: $pink;
-
-      }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
