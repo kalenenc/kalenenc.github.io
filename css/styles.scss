@@ -51,9 +51,10 @@ header.header {
   }
   
   
-  li {
+  li, a {
     font-family: $opensans;
     list-style: none;
+    text-decoration:none;
     display: inline;
     padding: 10px;
     font-size: 1.4em;
@@ -75,6 +76,28 @@ p {
   font-size:1.2em;
 }
  
+}
+
+// ---- Footer ---- 
+
+footer {
+  background: $lightestgreen;
+  height:300px;
+  text-align:center;
+  .cta-container {
+    padding-top: 20px;
+  }
+  h2 {
+    font-family:$opensans;
+    font-size:1.5em;
+    padding-top:20px;
+    margin-top:20px;
+  }
+
+  .social-media li {
+    margin-top:20px;
+  }
+
 }
 
 
@@ -103,11 +126,7 @@ section.section1 {
         transform:scale(1.2) rotate(5deg);
         cursor:pointer;
 
-      }
-
-
-
-      
+      }   
   
 }
 
@@ -184,13 +203,12 @@ section.section1 {
 .section4 {
   .grid {
     margin-top:300px;
-    overflow:visible;
-    margin-bottom:
+   
   }
 }
 
 .pencil {
-  width:30%;
+  width:20%;
   transform:rotate(135deg);
   
 }
@@ -198,7 +216,216 @@ section.section1 {
 // ---- Fifth Section ----
 
 
+.section5 {
+  margin-top:300px;
+  text-align:center;
+  background:$lightgreen;
+}
 
+// ---- Sixth Section ----
+
+
+.section6 {
+  margin-top:300px;
+  text-align:center;
+  background: $lightgreen;
+  .glasses {
+    margin: 50px auto;
+    width:80%;
+  }
+  
+  }
+
+
+.cta {
+    font-family: $opensans;
+    font-size:3em;
+    text-decoration: none;
+    color:$pink;
+    h2 {
+      border:5px solid $pink;
+      margin: 20px auto;
+      width:35%;
+      padding:0;
+      transition: all 0.3s ease-in-out; 
+    }
+    h2:hover {
+      color:white;
+      border:5px solid white;
+    }
+  }
+
+// ---- Seventh Section ----
+
+.section7 {
+  margin-top:300px;
+  font-family:$opensans;
+  font-size: 3em;
+  text-align:center;
+  .bee {
+    width:30%;
+    transform:rotate(50deg);
+  }
+}
+
+
+// ---- ABOUT CSS ----
+
+.about-section1, .about-section2, .about-section3 {
+  text-align:center;
+  
+  h2 {
+    font-family: $opensans;
+    font-weight: 800;
+    font-size:10vh;
+    margin-top:1.3em;
+    margin-bottom:0.3em;
+  }
+
+  [class*='col-1'] {
+  padding-right: 0;
+}
+}
+
+.my-pic {
+  width:100%;
+}
+
+.about-section4 {
+  text-align:center;
+  padding:50px 0;
+}
+
+.about-banner {
+  padding:20px;
+  width:100%;
+  height:200px;
+  position:relative;
+}
+
+.about-banner:after {
+  content: "";
+  background: $lightestgreen url("../photos/bee.svg") no-repeat fixed right;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.banner-container {
+  margin-top:3em;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    padding-right:200px;
+  }
+}
+
+// ---- Contact ----
+
+.contact {
+
+  .grid {
+    padding:0
+  }
+  [class*='col-1'] {
+  padding: 0;
+}
+  label {
+    text-align: left;
+
+  }
+}
+
+.form-module {
+  font-family: $opensans;
+  text-align: left;
+  form {
+    width:50%;
+    margin:0 auto;
+  }
+
+  input, textarea {
+    width:100%;
+    padding:5px;
+    border:1px solid grey;
+    border-radius:5px;
+    margin:10px 0;
+    box-shadow: none;
+    font-size: 15px;
+    box-shadow: none;
+    font-family: $opensans;
+
+  }
+
+  input[type="text"], input[type="email"] {
+    
+    height:40px;
+  
+   
+  }
+
+  textarea {
+    height:150px;
+  }
+}
+
+
+// ---- Flexbox ----
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+
+  [class*='col-1']:nth-child(1) {
+  background: #ccc;
+  order: 0;
+}
+[class*='col-1']:nth-child(2) {
+  background: #ccc;
+  order: 1;
+}
+
+}
+
+
+// ---- Doodles ----
+
+.doodles-section {
+ 
+  .module {
+    position:relative;
+    height:100vh;
+  }
+  .me {
+    width:80%;
+    transform: rotate(320deg);
+    position:absolute;
+    right:-900px;
+    animation: moveMe 1s ease-in-out 1s forwards;
+
+  }
+
+  .grid {
+    padding-left:0;
+  }
+
+  [class*='col-1'] {
+  padding-right: 0;
+}
+
+}
+
+@keyframes moveMe {
+  100% {right:-190px}
+}
 
 
 
