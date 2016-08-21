@@ -6,12 +6,14 @@ $sacramento: 'Sacramento', cursive;
 $opensans:'Open Sans Condensed', sans-serif;
 $grey: #95AAA3;
 $pink: #F5ABAB;
-$lightpink: #fffcfc;
+$lightpink: #FAC5C9;
+$lightpink: #fff3f3;
 $darkgreen: #73A493;
 $limegreen: #BCDD9A;
 $lightgreen: #DDF0C9;
 $verylightgreen: #F0F7E9;
 $lightestgreen: #F5FAF0;
+$creamsicle: #ffd2b9;
 $gutter: 20px;
   
   // ---------------------------------
@@ -29,6 +31,7 @@ $gutter: 20px;
 body, header.header {
   font-family: $opensans;
   color: $grey;
+ 
 }
 
 header.header {
@@ -104,37 +107,47 @@ footer {
 // ---- First Section ----
 
 .page-wrap {
-  padding:100px 50px;
+  padding:100px 0;
 }
 
 .module {
-  background:$lightgreen;
+
   text-align:center;
   padding:30px;
 }
 
-section.section1 {
-
-  
-    .star {
-        width:80%;
-        margin: 4.5em auto;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .star:hover {
-        transform:scale(1.2) rotate(5deg);
-        cursor:pointer;
-
-      }   
-  
+.section1 {
+     .grid {
+      background: $pink; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(white, $creamsicle, $pink, white); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(white, $creamsicle, $pink, white); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(white, $creamsicle, $pink, white); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(white, $creamsicle, $pink, white); /* Standard syntax */
+     }
+     
 }
+
+.star {
+    width:80%;
+    margin: 4.5em auto;
+    transition: all 0.3s ease-in-out;
+      }
+.star:hover {
+  transform:scale(1.2) rotate(5deg);
+  cursor:pointer;
+      }  
 
 // ---- Second Section ----
 
 .section2 {
   .grid {
     margin-top:300px;
+    background: $pink; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(white, $lightgreen, white); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(white, $lightgreen, white); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(white, $lightgreen, white); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(white, $lightgreen, white); /* Standard syntax */
+
   }
 
 
@@ -330,12 +343,6 @@ section.section1 {
 
 .contact {
 
-  .grid {
-    padding:0
-  }
-  [class*='col-1'] {
-  padding: 0;
-}
   label {
     text-align: left;
 
@@ -413,13 +420,6 @@ section.section1 {
 
   }
 
-  .grid {
-    padding-left:0;
-  }
-
-  [class*='col-1'] {
-  padding-right: 0;
-}
 
 }
 
@@ -456,13 +456,13 @@ section.section1 {
 
 .grid {
   width: 100%;
-  padding-left: $gutter;
+  // padding-left: $gutter;
   overflow: hidden;
 }
 
 [class*='col-1'] {
   float:left;
-  padding-right: $gutter;
+  // padding-right: $gutter;
 }
 
 .col-1-8 {
