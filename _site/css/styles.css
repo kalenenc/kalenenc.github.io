@@ -239,6 +239,22 @@ section.section1 .star:hover {
 @keyframes moveMe {
   100% {
     right: -190px; } }
+.dog-website {
+  background: url("https://wallpaperscraft.com/image/dog_husky_look_spotted_muzzle_40227_1920x1080.jpg") no-repeat fixed center;
+  height: 700px; }
+
+.music-website {
+  background: url("http://www.nekeran.com/i/dog-desktop-background-wallpaper.jpg") no-repeat fixed center;
+  height: 700px; }
+
+.artist-website {
+  background: url("https://wallpaperscraft.com/image/dog_husky_look_spotted_muzzle_40227_1920x1080.jpg") no-repeat fixed center;
+  height: 700px; }
+
+.js-game {
+  background: url("http://www.nekeran.com/i/dog-desktop-background-wallpaper.jpg") no-repeat fixed center;
+  height: 700px; }
+
 .grid {
   width: 100%;
   padding-left: 20px;
