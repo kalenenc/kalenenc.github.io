@@ -172,7 +172,7 @@ footer {
   .about-section1 [class*='col-1'], .about-section2 [class*='col-1'], .about-section3 [class*='col-1'] {
     padding-right: 0; }
 
-.my-pic {
+.my-pic, .rainbow-pitt, .flower {
   width: 100%; }
 
 .about-section4 {
@@ -253,21 +253,105 @@ footer {
 @keyframes moveMe {
   100% {
     right: -190px; } }
+.about {
+  background: grey;
+  z-index: -2;
+  position: relative; }
+
+.about:after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
 .dog-website {
-  background: url("https://wallpaperscraft.com/image/dog_husky_look_spotted_muzzle_40227_1920x1080.jpg") no-repeat fixed center;
-  height: 700px; }
+  height: 50em;
+  position: relative; }
+
+.dog-website:after {
+  content: "";
+  background: url("http://127.0.0.1:4000//../photos/yorkie.jpg") no-repeat fixed center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .music-website {
-  background: url("http://www.nekeran.com/i/dog-desktop-background-wallpaper.jpg") no-repeat fixed center;
-  height: 700px; }
+  height: 50em;
+  position: relative; }
+
+.music-website:after {
+  content: "";
+  background: url("http://127.0.0.1:4000//../photos/sunset-hair.jpg") no-repeat fixed center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .artist-website {
-  background: url("https://wallpaperscraft.com/image/dog_husky_look_spotted_muzzle_40227_1920x1080.jpg") no-repeat fixed center;
-  height: 700px; }
+  position: relative;
+  height: 50em; }
+
+.artist-website:after {
+  content: "";
+  background: url("http://127.0.0.1:4000//../photos/tan-people.png") no-repeat fixed center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .js-game {
+  position: relative;
+  height: 50em; }
+
+.js-game:after {
+  content: "";
   background: url("http://www.nekeran.com/i/dog-desktop-background-wallpaper.jpg") no-repeat fixed center;
-  height: 700px; }
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.port1, .port2, .port3, .port4 {
+  position: relative; }
+  .port1 h2, .port2 h2, .port3 h2, .port4 h2 {
+    font-size: 15vh;
+    text-transform: uppercase;
+    top: 50%;
+    border-bottom: 5px solid white; }
+  .port1 h2, .port1 p, .port2 h2, .port2 p, .port3 h2, .port3 p, .port4 h2, .port4 p {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: white;
+    left: 50%;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center; }
+  .port1 p, .port2 p, .port3 p, .port4 p {
+    top: 70%; }
+
+.port5 {
+  margin-top: 100px;
+  text-align: center; }
+  .port5 p {
+    margin: 100px auto;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2em; }
 
 .grid {
   width: 100%;
