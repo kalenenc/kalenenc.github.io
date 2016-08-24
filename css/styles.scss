@@ -133,10 +133,14 @@ footer {
     margin: 4.5em auto;
     transition: all 0.3s ease-in-out;
       }
-.star:hover {
-  transform:scale(1.2) rotate(5deg);
-  cursor:pointer;
-      }  
+
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
 // ---- Second Section ----
 
@@ -198,16 +202,36 @@ footer {
 
 .section3 {
   background:$lightgreen;
+  text-align: center;
+  font-family: $opensans;
+  overflow: hidden;
+  p {
+    font-size:1.5em;
+  }
+  a {
+    text-decoration: none;
+    color:inherit;
+  }
+ 
   .h2 {
-    margin:200px auto;
+    margin:200px auto 0 auto;
   }
 
-  ul {
-    text-align:center;
+  .image-container {
+    margin-top:20px;
+    position:relative;
 
-    li {
+
+    .thumb {
       display:inline-block;
-      padding-left:50px;
+      width:30%;
+      background:blue;
+      position:absolute
+    }
+    img {
+      width:30%;
+      float:left;
+      padding-left:3em;
     }
   }
 }
