@@ -13,6 +13,14 @@
 <meta name="author" content="Kalene Nicole">
 <!-- Link to Sass -->
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/../css/styles.css">
+<!-- Blog CSS -->
+{% if page.style %}
+ <style type="text/css">
+
+     {{ page.style }}
+     
+ </style>
+{% endif %}
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{{site.url}}/../_sass/style.css">

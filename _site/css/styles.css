@@ -223,43 +223,55 @@ footer {
 .about-section4 {
   text-align: center;
   padding: 50px 0; }
-
-.about-banner {
-  padding: 20px;
-  width: 100%;
-  height: 200px;
-  position: relative; }
-
-.about-banner:after {
-  content: "";
-  background: #F5FAF0 url("../photos/bee.svg") no-repeat fixed right;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.banner-container {
-  margin-top: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .banner-container h2 {
-    padding-right: 200px; }
+  .about-section4 .about-banner {
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    position: relative; }
+    .about-section4 .about-banner h2 {
+      font-family: "Sacramento", cursive;
+      font-size: 3em; }
+    .about-section4 .about-banner button {
+      margin-top: 1em;
+      background: #F5ABAB;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px #888888;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 1.5em; }
+  .about-section4 .about-banner:after {
+    content: "";
+    background: #F5FAF0 url("../photos/bee.svg") no-repeat fixed right;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .about-section4 .banner-container {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about-section4 .banner-container h2 {
+      padding-right: 200px; }
 
 .blog {
-  margin-top: 150px;
   text-align: center; }
-  .blog a {
-    text-decoration: none;
-    color: #F5ABAB;
-    font-family: "Sacramento", cursive;
-    font-size: 3em; }
-  .blog li {
-    font-family: "Open Sans Condensed", sans-serif;
-    color: #F5ABAB; }
+  .blog ul {
+    margin-bottom: 150px; }
+    .blog ul li {
+      margin-top: 150px;
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #F5ABAB; }
+      .blog ul li a {
+        text-decoration: none;
+        color: #F5ABAB;
+        font-family: "Sacramento", cursive;
+        font-size: 3em; }
   .blog p {
     color: #95AAA3; }
 
@@ -407,10 +419,15 @@ footer {
 .port5 {
   margin-top: 100px;
   text-align: center; }
+  .port5 h2 {
+    font-size: 3em;
+    font-family: "Sacramento", cursive;
+    color: #95AAA3; }
   .port5 p {
     margin: 100px auto;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 2em; }
+    font-size: 1.5em;
+    color: #F5ABAB; }
 
 .grid {
   width: 100%;

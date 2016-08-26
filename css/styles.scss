@@ -391,28 +391,42 @@ footer {
 .about-section4 {
   text-align:center;
   padding:50px 0;
-}
 
-.about-banner {
-  padding:20px;
-  width:100%;
-  height:200px;
-  position:relative;
-}
+   .about-banner {
+    padding:20px;
+    width:100%;
+    height:200px;
+    position:relative;
 
-.about-banner:after {
-  content: "";
-  background: $lightestgreen url("../photos/bee.svg") no-repeat fixed right;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
+      h2 {
+        font-family: $sacramento;
+        font-size:3em;
+      }
 
-.banner-container {
+      button {
+        margin-top:1em;
+        background:$pink;
+        color:white;
+        padding:15px;
+        border:none;
+        border-radius:5px;
+        box-shadow: 0px 5px 10px #888888;
+        font-family:$opensans;
+        font-size:1.5em;
+      }
+  }
+   .about-banner:after {
+    content: "";
+    background: $lightestgreen url("../photos/bee.svg") no-repeat fixed right;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .banner-container {
   margin-top:3em;
   display:flex;
   align-items: center;
@@ -422,22 +436,35 @@ footer {
     padding-right:200px;
   }
 }
+}
+
+
+
+
+
+
 
 // ---- Blog ----
 
 .blog {
-  margin-top:150px;
+
   text-align: center;
-  a {
-    text-decoration: none;
-    color: $pink;
-    font-family: $sacramento;
-    font-size: 3em;
+
+  ul {
+    margin-bottom:150px;
+    li {
+       margin-top:150px;
+       font-family: $opensans;
+       color: $pink;
+      a {
+        text-decoration: none;
+        color: $pink;
+        font-family: $sacramento;
+        font-size: 3em;
+      }
+    }
   }
-  li {
-    font-family: $opensans;
-    color: $pink;
-  }
+
   p {
     color:$grey;
   }
@@ -446,45 +473,42 @@ footer {
 // ---- Contact ----
 
 .contact {
-
-  label {
-    text-align: left;
-
+  .text-module {
+    background: $pink;
   }
-}
-
-.form-module {
-  font-family: $opensans;
-  text-align: left;
-  form {
-    width:50%;
-    margin:0 auto;
-  }
-
-  input, textarea {
-    width:100%;
-    padding:5px;
-    border:1px solid grey;
-    border-radius:5px;
-    margin:10px 0;
-    box-shadow: none;
-    font-size: 15px;
-    box-shadow: none;
+  .form-module {
     font-family: $opensans;
-
-  }
-
-  input[type="text"], input[type="email"] {
-    
-    height:40px;
-  
-   
-  }
-
-  textarea {
-    height:150px;
-  }
+    text-align: left;
+      form {
+         width:50%;
+         margin:0 auto;
+        label {
+          text-align: left;
+          }
+           input, textarea {
+              width:100%;
+              padding:5px;
+              border:1px solid grey;
+              border-radius:5px;
+              margin:10px 0;
+              box-shadow: none;
+              font-size: 15px;
+              box-shadow: none;
+              font-family: $opensans;
+         }
+         input[type="text"], input[type="email"] {   
+             height:40px;  
+        }
+          textarea {
+            height:150px;
+          }
+      }
 }
+
+  
+
+
+
 
 
 // ---- Flexbox ----
@@ -649,11 +673,17 @@ footer {
 .port5 {
   margin-top:100px;
   text-align: center;
+  h2 {
+    font-size:3em;
+    font-family: $sacramento;
+    color:$grey;
+  }
 
   p { 
     margin: 100px auto;
     font-family: $opensans;
-    font-size:2em;
+    font-size:1.5em;
+    color:$pink;
   }
 }
 
