@@ -129,9 +129,31 @@ footer {
 }
 
 .star {
+  margin: 4.5em auto;
+
+  polygon {
+    transform: rotate(45deg);
+  
+  /* doesn't work as intended in Firefox 
+   * % values are taken relative to the SVG, not the element
+   * which actually seems to be correct */
+    transform-origin: 50% 50%;
+ 
     width:80%;
-    margin: 4.5em auto;
-    transition: all 0.3s ease-in-out;
+    
+    animation: spin 10s linear infinite;
+    animation-play-state:paused;
+
+
+    }
+
+
+}
+
+
+
+ .star:hover polygon {
+      animation-play-state:running;
       }
 
 
@@ -205,7 +227,7 @@ footer {
   text-align: center;
   font-family: $opensans;
   overflow: hidden;
-  p {
+  p.click-more {
     font-size:1.5em;
   }
   a {
@@ -216,25 +238,50 @@ footer {
   .h2 {
     margin:200px auto 0 auto;
   }
+}
 
-  .image-container {
-    margin-top:20px;
-    position:relative;
+.three-images {
+  padding-left:20px;
+}
 
+.image-container {
+  
+  border:2px solid red;
+  width:30%;
+  position:relative;
+  float:left;
+  width:33.33%;
+  padding-right:20px;
+  overflow: hidden;
+ 
+  img {
+    width:100%;
 
-    .thumb {
-      display:inline-block;
-      width:30%;
-      background:blue;
-      position:absolute
-    }
-    img {
-      width:30%;
-      float:left;
-      padding-left:3em;
-    }
   }
 }
+.thumb {
+  font-size:40px;
+  position:absolute;
+  background:pink;
+  width:80%;
+  height:80%;
+  bottom:0;
+  left:50%;
+  padding-top:30px;
+  transition: all 0.3s ease-in-out;
+  transform:translateX(-54%) translateY(100%) scale(0.1);
+  
+
+}
+
+.image-container:hover .thumb {
+  transform: translateY(0) translateX(-54%) scale(1);
+
+}
+
+
+
+
 
 // ---- Fourth Section ----
 
@@ -379,6 +426,8 @@ footer {
 // ---- Blog ----
 
 .blog {
+  margin-top:150px;
+  text-align: center;
   a {
     text-decoration: none;
     color: $pink;
@@ -388,6 +437,9 @@ footer {
   li {
     font-family: $opensans;
     color: $pink;
+  }
+  p {
+    color:$grey;
   }
 }
 

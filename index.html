@@ -11,7 +11,9 @@ layout: default
 				<div class="module">
 					<h2 class="h2">I'm a girl...</h2>
 					
+					<a href="#">
 					{% include star.html %}
+					</a>
 					
 				
 
@@ -58,19 +60,32 @@ layout: default
 
 	<section class="section3">	
 		<h2 class="h2">... who makes websites...</h2>
-		<p><a href="#">Click here</a> to see more</p>
+		<p class="click-more"><a href="#">Click here</a> to see more</p>
 		
-		<div class="image-container">
-			<p class="thumb">Doge</p>
-				<img src="{{site.url}}/photos/dog-website.png" />
+			<div class="three-images">
+				<div class="image-container">
+					<p class="doge-thumb thumb">Dog Walking Website 
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
+					</p>
+					<img src="{{site.url}}/photos/dog-website.png" />
+				</div>
+				
+				<div class="image-container">
+					<p class="music-thumb thumb">Music Portfolio <br />
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
+					</p>
+					<img src="{{site.url}}/photos/music-website.png"" />
+				</div>
+				
+				<div class="image-container">
+					<p class="chely-thumb thumb">Artist Portfolio  <br />
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
+					</p>
+					<img src="{{site.url}}/photos/chelychee.png" />
+				</div>
+			</div>
 			
-			<p class="thumb"></p>
-				<img src="{{site.url}}/photos/music-website.png"" />
-			
-			<p class="thumb"></p>
-				<img src="{{site.url}}/photos/chelychee.png"" />
-			
-		</div>
+	
 		
 	</section>
 

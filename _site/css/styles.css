@@ -70,9 +70,19 @@ footer {
   /* Standard syntax */ }
 
 .star {
-  width: 80%;
-  margin: 4.5em auto;
-  transition: all 0.3s ease-in-out; }
+  margin: 4.5em auto; }
+  .star polygon {
+    transform: rotate(45deg);
+    /* doesn't work as intended in Firefox 
+     * % values are taken relative to the SVG, not the element
+     * which actually seems to be correct */
+    transform-origin: 50% 50%;
+    width: 80%;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused; }
+
+.star:hover polygon {
+  animation-play-state: running; }
 
 @keyframes spin {
   100% {
@@ -111,25 +121,42 @@ footer {
   text-align: center;
   font-family: "Open Sans Condensed", sans-serif;
   overflow: hidden; }
-  .section3 p {
+  .section3 p.click-more {
     font-size: 1.5em; }
   .section3 a {
     text-decoration: none;
     color: inherit; }
   .section3 .h2 {
     margin: 200px auto 0 auto; }
-  .section3 .image-container {
-    margin-top: 20px;
-    position: relative; }
-    .section3 .image-container .thumb {
-      display: inline-block;
-      width: 30%;
-      background: blue;
-      position: absolute; }
-    .section3 .image-container img {
-      width: 30%;
-      float: left;
-      padding-left: 3em; }
+
+.three-images {
+  padding-left: 20px; }
+
+.image-container {
+  border: 2px solid red;
+  width: 30%;
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding-right: 20px;
+  overflow: hidden; }
+  .image-container img {
+    width: 100%; }
+
+.thumb {
+  font-size: 40px;
+  position: absolute;
+  background: pink;
+  width: 80%;
+  height: 80%;
+  bottom: 0;
+  left: 50%;
+  padding-top: 30px;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-54%) translateY(100%) scale(0.1); }
+
+.image-container:hover .thumb {
+  transform: translateY(0) translateX(-54%) scale(1); }
 
 .section4 .grid {
   margin-top: 300px; }
@@ -222,14 +249,19 @@ footer {
   .banner-container h2 {
     padding-right: 200px; }
 
-.blog a {
-  text-decoration: none;
-  color: #F5ABAB;
-  font-family: "Sacramento", cursive;
-  font-size: 3em; }
-.blog li {
-  font-family: "Open Sans Condensed", sans-serif;
-  color: #F5ABAB; }
+.blog {
+  margin-top: 150px;
+  text-align: center; }
+  .blog a {
+    text-decoration: none;
+    color: #F5ABAB;
+    font-family: "Sacramento", cursive;
+    font-size: 3em; }
+  .blog li {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #F5ABAB; }
+  .blog p {
+    color: #95AAA3; }
 
 .contact label {
   text-align: left; }
