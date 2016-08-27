@@ -1,16 +1,43 @@
 <header class="header">
 	<h1>Kalene</h1>
-	<div class="nav-icon cross">
+	<nav>
+	<div class="nav-icon">
 		<div class="span"></div>
 	</div>
-	<ul>
-		<a href="{{site.url}}/about"><li>About</li></a>
-		<a href="{{site.url}}/portfolio"><li>Portfolio</li></a>
-		<a href="{{site.url}}/doodles"><li>Doodles</li></a>
-		<a href="{{site.url}}/blog"><li>Blog</li></a>
-		<li>Resume</li>
-		<a href="{{site.url}}/contact"><li>Contact</li></a>	</ul>
+		<ul>
+			<li><a href="{{site.url}}/about">About</a></li>
+			<li><a href="{{site.url}}/portfolio">Portfolio</a></li>
+			<li><a href="{{site.url}}/doodles">Doodles</a></li>
+			<li class="li"><a href="{{site.url}}/blog">Blog</a></li>
+			<li class="li"><a href="#">Resume</a></li>
+			<li class="li"><a href="{{site.url}}/contact">Contact</a></li>
+		</ul>
+		
+	</nav>
+	
 	{% include bee.html %}
 	<p>Web designer, developer, doodler, busy bee, and lover of all things cute.</p>
 	
 </header>
+
+
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+$('.nav-icon').on('click', function() {
+  this.classList.toggle('active');
+});
+
+
+$(".nav-icon").on("click", function(){
+	$('nav ul').slideToggle();
+});
+
+
+
+
+
+
+
+</script>

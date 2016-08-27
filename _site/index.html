@@ -30,8 +30,6 @@
 <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000//../css/doodles.css">
 <!-- Link to css reset -->
 <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000//../css/reset.css">
-<!-- Link to nav JS -->
-<script src="nav.js" type="text/javascript"></script>
 <!-- Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Sacramento|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
@@ -39,16 +37,21 @@
 
 	<header class="header">
 	<h1>Kalene</h1>
-	<div class="nav-icon cross">
+	<nav>
+	<div class="nav-icon">
 		<div class="span"></div>
 	</div>
-	<ul>
-		<a href="http://127.0.0.1:4000//about"><li>About</li></a>
-		<a href="http://127.0.0.1:4000//portfolio"><li>Portfolio</li></a>
-		<a href="http://127.0.0.1:4000//doodles"><li>Doodles</li></a>
-		<a href="http://127.0.0.1:4000//blog"><li>Blog</li></a>
-		<li>Resume</li>
-		<a href="http://127.0.0.1:4000//contact"><li>Contact</li></a>	</ul>
+		<ul>
+			<li><a href="http://127.0.0.1:4000//about">About</a></li>
+			<li><a href="http://127.0.0.1:4000//portfolio">Portfolio</a></li>
+			<li><a href="http://127.0.0.1:4000//doodles">Doodles</a></li>
+			<li class="li"><a href="http://127.0.0.1:4000//blog">Blog</a></li>
+			<li class="li"><a href="#">Resume</a></li>
+			<li class="li"><a href="http://127.0.0.1:4000//contact">Contact</a></li>
+		</ul>
+		
+	</nav>
+	
 	<svg class="bee" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg9464" viewBox="0 0 397.94 338.97" height="338.97" width="397.94">
   <defs id="defs9466">
     <linearGradient osb:paint="solid" id="linearGradient12036">
@@ -125,6 +128,27 @@
 	
 </header>
 
+
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+$('.nav-icon').on('click', function() {
+  this.classList.toggle('active');
+});
+
+
+$(".nav-icon").on("click", function(){
+	$('nav ul').slideToggle();
+});
+
+
+
+
+
+
+
+</script>
 
 		<!-- Section 1 -->
 
@@ -509,6 +533,10 @@
 </footer>
 
 </body>
+
+
 <!-- jQuery -->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<!-- Link to nav JS -->
+<script src="http://127.0.0.1:4000//../js/nav.js" type="text/javascript"></script>
 </html>

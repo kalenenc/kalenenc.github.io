@@ -20,33 +20,34 @@ header.header {
     padding: 20px; }
   header.header ul {
     padding-bottom: 20px; }
-  header.header li, header.header a {
-    font-family: "Open Sans Condensed", sans-serif;
-    list-style: none;
-    text-decoration: none;
-    display: inline;
-    padding: 10px;
-    font-size: 1.4em;
-    color: #95AAA3; }
-  header.header li:hover {
-    background: #F0F7E9; }
+    header.header ul li {
+      display: inline;
+      padding: 10px;
+      font-family: "Open Sans Condensed", sans-serif;
+      list-style: none;
+      font-size: 1.4em;
+      color: #95AAA3; }
+      header.header ul li::hover {
+        background: #F0F7E9; }
+      header.header ul li a {
+        text-decoration: none;
+        color: inherit; }
   header.header svg {
     animation: bounce 1.5s 1s ease-in-out; }
   header.header p {
     padding-top: 20px;
     font-size: 1.2em; }
 
-.active {
-  display: block; }
-
 .nav-icon {
   text-align: left;
   height: 70px;
   width: 88px;
   position: relative;
-  margin-left: 20px; }
+  margin-left: 20px;
+  display: none;
+  position: absolute; }
   .nav-icon .span {
-    height: 6px;
+    height: 5px;
     width: 55px;
     position: absolute;
     top: 0;
@@ -56,9 +57,11 @@ header.header {
     margin: auto;
     background: #95AAA3;
     transition: all 0.3s ease-in-out; }
+    .nav-icon .span::hover {
+      cursor: pointer; }
     .nav-icon .span::before, .nav-icon .span::after {
       content: "";
-      height: 6px;
+      height: 5px;
       width: 100%;
       background: #95AAA3;
       position: absolute;
@@ -76,6 +79,19 @@ header.header {
   .nav-icon.active .span {
     background: none; }
 
+@media only screen and (max-width: 900px) {
+  .nav-mobile {
+    display: block; }
+
+  nav .nav-icon {
+    display: block; }
+  nav ul {
+    display: none; }
+    nav ul li a {
+      display: block; } }
+@media only screen and (min-width: 900px) {
+  nav ul {
+    display: block !important; } }
 footer {
   background: #F5FAF0;
   height: 300px;

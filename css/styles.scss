@@ -41,51 +41,45 @@ header.header {
   background: $lightestgreen;
   padding-bottom:15px;
   border-bottom: 1px dashed $pink;
-
   h1 {
     font-family: $sacramento;
     color: $pink;
     font-size: 3em;
     margin: 0;
     padding: 20px;
+
   }
 
   ul {
     padding-bottom:20px;
-  }
-  
-  
-  li, a {
-    font-family: $opensans;
-    list-style: none;
-    text-decoration:none;
-    display: inline;
-    padding: 10px;
-    font-size: 1.4em;
-    color: $grey;
-    
-  }
-  
-  li:hover {
-    background: $verylightgreen;
-  }
+    li {
+      display: inline;
+      padding: 10px;
+      font-family: $opensans;
+      list-style: none;
+      font-size: 1.4em;
+      color: $grey;
 
+
+      &::hover {
+        background: $verylightgreen;
+      }
+      a {
+        text-decoration:none;
+        color:inherit;
+      }
+    }
+  }
   svg {
     animation: bounce 1.5s 1s ease-in-out;
+
   }
-
-
-p {
-  padding-top:20px;
-  font-size:1.2em;
-}
+  p {
+    padding-top:20px;
+    font-size:1.2em;
+  }
  
 }
-
-.active {
-  display:block;
-}
-
 
 .nav-icon {
   text-align:left;
@@ -93,8 +87,10 @@ p {
   width:88px;
   position:relative;
   margin-left:20px;
+  display:none;
+  position:absolute;
   .span {
-    height:6px;
+    height:5px;
     width:55px;
     position:absolute;
     top:0;
@@ -104,9 +100,12 @@ p {
     margin:auto;
     background:$grey;
     transition: all 0.3s ease-in-out;
+    &::hover {
+      cursor: pointer;
+    }
     &::before,&::after {
       content: "";
-      height:6px;
+      height:5px;
       width:100%;
       background:$grey;
       position:absolute;
@@ -137,9 +136,35 @@ p {
 }
 
 
+@media only screen and (max-width: 900px) {
 
+.nav-mobile {
+  display: block;
+}
 
+nav {
+  .nav-icon {
+    display:block; 
+  }
+  ul {
+    display:none;
+    li {
+      a {
+        display:block;
+      }
+    }
+  }
+}
 
+}
+
+@media only screen and (min-width: 900px) {
+  nav {
+    ul{
+      display:block !important;
+    }
+  }
+}
 
 
 // ---- Footer ---- 
