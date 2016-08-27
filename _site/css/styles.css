@@ -36,6 +36,46 @@ header.header {
     padding-top: 20px;
     font-size: 1.2em; }
 
+.active {
+  display: block; }
+
+.nav-icon {
+  text-align: left;
+  height: 70px;
+  width: 88px;
+  position: relative;
+  margin-left: 20px; }
+  .nav-icon .span {
+    height: 6px;
+    width: 55px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #95AAA3;
+    transition: all 0.3s ease-in-out; }
+    .nav-icon .span::before, .nav-icon .span::after {
+      content: "";
+      height: 6px;
+      width: 100%;
+      background: #95AAA3;
+      position: absolute;
+      transition: all 0.3s ease-in-out; }
+    .nav-icon .span::before {
+      top: 20px; }
+    .nav-icon .span::after {
+      top: -20px; }
+  .nav-icon.active .span::before {
+    top: 0;
+    transform: rotate(-45deg); }
+  .nav-icon.active .span::after {
+    top: 0;
+    transform: rotate(45deg); }
+  .nav-icon.active .span {
+    background: none; }
+
 footer {
   background: #F5FAF0;
   height: 300px;
@@ -275,14 +315,24 @@ footer {
   .blog p {
     color: #95AAA3; }
 
-.contact label {
-  text-align: left; }
+.text-module {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif; }
+  .text-module h2 {
+    font-size: 10em;
+    text-transform: uppercase; }
+  .text-module p {
+    margin-top: 20px;
+    font-size: 2em; }
 
 .form-module {
   font-family: "Open Sans Condensed", sans-serif;
-  text-align: left; }
+  text-align: left;
+  background: #ffd2b9;
+  font-size: 1.5em; }
   .form-module form {
-    width: 50%;
+    color: white;
+    width: 70%;
     margin: 0 auto; }
   .form-module input, .form-module textarea {
     width: 100%;
@@ -298,6 +348,18 @@ footer {
     height: 40px; }
   .form-module textarea {
     height: 150px; }
+  .form-module input[type="submit"] {
+    background: #DDF0C9;
+    color: #95AAA3;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #888888;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5em; }
+
+label {
+  text-align: left; }
 
 .flexbox {
   display: -webkit-flex;
