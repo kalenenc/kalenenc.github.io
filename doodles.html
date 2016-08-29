@@ -3,17 +3,51 @@ layout: default
 ---
 
 <section class="doodles-section">
-	<div class="grid">
+	<div class="grid flexbox">
 		<div class="col-1-2">
-			<div class="module">
-				<h2>My Doodles</h2>
-				<p>All doodles on this website were drawn by me. Check out my work on dribbble</p>
+			<div class="doodle-text-module">
+				<h2>Doodles</h2>
+				<p>All doodles on this website were drawn by me. Scroll down to check out my gallery.</p>
 			</div>
 			
 		</div>
 		<div class="col-1-2">
-			<div class="module">
+			<div class="me-module">
 				{% include me.html %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="doodles-section2">
+	<div class="grid">
+		<div class="col-1-2">
+			<div class="module">
+				{% include computer.html %}
+				<p></p>
+			</div>
+		</div>
+		<div class="col-1-2">
+			<div class="module">
+				{% include bee.html %}
+				<p></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="doodles-section3">
+	<div class="grid">
+		<div class="col-1-2">
+			<div class="module">
+				{% include glasses.html %}
+				<p></p>
+			</div>
+		</div>
+		<div class="col-1-2">
+			<div class="module">
+				{% include pencil.html %}
+				<p></p>
 			</div>
 		</div>
 	</div>

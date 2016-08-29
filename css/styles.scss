@@ -8,6 +8,7 @@ $grey: #95AAA3;
 $pink: #F5ABAB;
 $lightpink: #FAC5C9;
 $lightpink: #fff3f3;
+$peachy: #ffa2a2;
 $darkgreen: #73A493;
 $limegreen: #BCDD9A;
 $lightgreen: #DDF0C9;
@@ -642,25 +643,54 @@ footer {
 // ---- Doodles ----
 
 .doodles-section {
- 
-  .module {
-    position:relative;
-    height:100vh;
+  .flexbox {
+      [class*='col-1']:nth-child(1) {
+          background: $creamsicle;
+          order: 0;
+        }
+        [class*='col-1']:nth-child(2) {
+          background: $lightgreen;
+          order: 1;
+        }
+     .doodle-text-module {
+        font-family:$opensans;
+        text-align: center;
+        color:white;
+        margin-top: 10em;
+
+        h2 {
+          font-size: 8em;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 2em;
+          margin-top: 20px;
+        }
+      }
+      .me-module {
+        position:relative;
+        height:100vh;
+        .me {
+        width:80%;
+        transform: rotate(320deg);
+        position:absolute;
+        right:-900px;
+        animation: moveMe 1s ease-in-out 1s forwards;
+      }
+    }
   }
-  .me {
-    width:80%;
-    transform: rotate(320deg);
-    position:absolute;
-    right:-900px;
-    animation: moveMe 1s ease-in-out 1s forwards;
-
-  }
-
-
 }
 
 @keyframes moveMe {
   100% {right:-190px}
+}
+
+.doodles-section2 {
+  background: $darkpink;
+}
+
+.doodles-section3 {
+  background: pink;
 }
 
 // --- Portfolio ----

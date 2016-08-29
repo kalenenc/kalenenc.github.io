@@ -389,19 +389,42 @@ label {
     background: #ffd2b9;
     order: 1; }
 
-.doodles-section .module {
+.doodles-section .flexbox [class*='col-1']:nth-child(1) {
+  background: #ffd2b9;
+  order: 0; }
+.doodles-section .flexbox [class*='col-1']:nth-child(2) {
+  background: #DDF0C9;
+  order: 1; }
+.doodles-section .flexbox .doodle-text-module {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 10em; }
+  .doodles-section .flexbox .doodle-text-module h2 {
+    font-size: 8em;
+    text-transform: uppercase; }
+  .doodles-section .flexbox .doodle-text-module p {
+    font-size: 2em;
+    margin-top: 20px; }
+.doodles-section .flexbox .me-module {
   position: relative;
   height: 100vh; }
-.doodles-section .me {
-  width: 80%;
-  transform: rotate(320deg);
-  position: absolute;
-  right: -900px;
-  animation: moveMe 1s ease-in-out 1s forwards; }
+  .doodles-section .flexbox .me-module .me {
+    width: 80%;
+    transform: rotate(320deg);
+    position: absolute;
+    right: -900px;
+    animation: moveMe 1s ease-in-out 1s forwards; }
 
 @keyframes moveMe {
   100% {
     right: -190px; } }
+.doodles-section2 {
+  background: #fd7d7d; }
+
+.doodles-section3 {
+  background: pink; }
+
 .port {
   background: grey;
   z-index: -2;
