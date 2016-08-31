@@ -194,7 +194,9 @@ footer {
 // ---- First Section ----
 
 .page-wrap {
-  padding:100px 0;
+  // padding:100px 0;
+  
+
 }
 
 .module {
@@ -205,11 +207,7 @@ footer {
 
 .section1 {
      .grid {
-      background: $pink; /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(white, $creamsicle, $pink, white); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(white, $creamsicle, $pink, white); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(white, $creamsicle, $pink, white); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(white, $creamsicle, $pink, white); /* Standard syntax */
+
      }
      
 }
@@ -229,11 +227,7 @@ footer {
     
     animation: spin 10s linear infinite;
     animation-play-state:paused;
-
-
     }
-
-
 }
 
 
@@ -254,12 +248,7 @@ footer {
 
 .section2 {
   .grid {
-    margin-top:300px;
-    background: $pink; /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(white, $lightgreen, white); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(white, $lightgreen, white); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(white, $lightgreen, white); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(white, $lightgreen, white); /* Standard syntax */
+
 
   }
 
@@ -322,7 +311,7 @@ footer {
   }
  
   .h2 {
-    margin:200px auto 0 auto;
+    margin:0 auto;
   }
 }
 
@@ -373,7 +362,9 @@ footer {
 
 .section4 {
   .grid {
-    margin-top:300px;
+    .module {
+      padding-top:0 auto;
+    }
    
   }
 }
@@ -388,7 +379,7 @@ footer {
 
 
 .section5 {
-  margin-top:300px;
+
   text-align:center;
   background:$lightgreen;
 }
@@ -397,7 +388,7 @@ footer {
 
 
 .section6 {
-  margin-top:300px;
+  
   text-align:center;
   background: $lightgreen;
   .glasses {
