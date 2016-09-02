@@ -22,16 +22,17 @@ header.header {
     padding-bottom: 20px; }
     header.header ul li {
       display: inline;
-      padding: 10px;
       font-family: "Open Sans Condensed", sans-serif;
       list-style: none;
       font-size: 1.4em;
       color: #95AAA3; }
-      header.header ul li::hover {
-        background: #F0F7E9; }
       header.header ul li a {
         text-decoration: none;
-        color: inherit; }
+        color: inherit;
+        padding: 10px; }
+        header.header ul li a:hover {
+          background: #DDF0C9;
+          animation: flipInX 3s ease-in-out; }
   header.header svg {
     animation: bounce 1.5s 1s ease-in-out; }
   header.header p {
@@ -45,7 +46,8 @@ header.header {
   position: relative;
   margin-left: 20px;
   display: none;
-  position: absolute; }
+  position: absolute;
+  cursor: pointer; }
   .nav-icon .span {
     height: 5px;
     width: 55px;
@@ -57,8 +59,6 @@ header.header {
     margin: auto;
     background: #95AAA3;
     transition: all 0.3s ease-in-out; }
-    .nav-icon .span::hover {
-      cursor: pointer; }
     .nav-icon .span::before, .nav-icon .span::after {
       content: "";
       height: 5px;
@@ -140,18 +140,21 @@ footer {
 .computer {
   margin: 5em 0; }
 
-.social-media li {
-  margin-top: 100px;
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
-  font-size: 2em; }
-.social-media .fa {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 0px #888888;
-  transition: all; }
+.social-media {
+  background: #DDF0C9;
+  border: 3px solid black; }
+  .social-media li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 2em; }
+  .social-media .fa {
+    background: white;
+    color: #F5C3AB;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px #888888;
+    transition: all; }
 
 .section3 {
   background: #DDF0C9 url("../photos/greenzig.svg");
@@ -538,25 +541,6 @@ label {
 .col-3-4 {
   width: 75%; }
 
-@-webkit-keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0); }
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0); }
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0); } }
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -576,3 +560,25 @@ label {
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }

@@ -23,6 +23,7 @@ $peach: #F5C3AB;
 $darkpurple: #4c356d;
 $darklime: #89C489;
 $lightblue: #d8fffc;
+$orange: #e64e25;
 $gutter: 20px;
 
 
@@ -63,19 +64,23 @@ header.header {
     padding-bottom:20px;
     li {
       display: inline;
-      padding: 10px;
+     
       font-family: $opensans;
       list-style: none;
       font-size: 1.4em;
       color: $grey;
-
-
-      &::hover {
-        background: $verylightgreen;
-      }
+      // &:hover {
+      //   animation: bounce 0.3s ease-in-out;
+      // }
       a {
         text-decoration:none;
         color:inherit;
+         padding: 10px;
+  
+        &:hover {
+          background:$lightgreen;
+          animation: flipInX 3s ease-in-out;
+        }
       }
     }
   }
@@ -98,6 +103,7 @@ header.header {
   margin-left:20px;
   display:none;
   position:absolute;
+  cursor:pointer;
   .span {
     height:5px;
     width:55px;
@@ -109,9 +115,7 @@ header.header {
     margin:auto;
     background:$grey;
     transition: all 0.3s ease-in-out;
-    &::hover {
-      cursor: pointer;
-    }
+   
     &::before,&::after {
       content: "";
       height:5px;
@@ -273,16 +277,19 @@ footer {
 }
 
 .social-media {
+  background:$lightgreen;
+  border:3px solid black;
     li {
-      margin-top:100px;
       list-style-type: none;
       display:inline-block;
       padding:10px;
       font-size:2em;
+
     }
 
     .fa {
       background:white;
+      color:$peach;
       padding:10px;
       border-radius:10px;
       box-shadow: 0px 5px 0px #888888;
@@ -873,7 +880,8 @@ footer {
 
 
 
-@-webkit-keyframes bounce {
+
+@keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -901,30 +909,35 @@ footer {
   }
 }
 
-@keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
   }
 
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
   }
 
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
   }
 }
