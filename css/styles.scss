@@ -17,7 +17,15 @@ $lightestgreen: #F5FAF0;
 $creamsicle: #ffd2b9;
 $lightcreamsicle: #ffece2;
 $darkpink: #fd7d7d;
+$amazingpink: #CB0048;
+$prettyamazingpink: #C24571;
+$peach: #F5C3AB;
+$darkpurple: #4c356d;
+$darklime: #89C489;
+$lightblue: #d8fffc;
 $gutter: 20px;
+
+
   
   // ---------------------------------
 
@@ -207,7 +215,7 @@ footer {
 
 .section1 {
      .grid {
-
+      background: $amazingpink url("../photos/squiggle.svg");
      }
      
 }
@@ -248,7 +256,12 @@ footer {
 
 .section2 {
   .grid {
+    background: $peach url("../photos/lilcomputer.svg");
+    background-size:10%;
 
+    .h2 {
+      color: $darkpurple;
+    }
 
   }
 
@@ -298,7 +311,8 @@ footer {
 // ---- Third Section ----
 
 .section3 {
-  background:$lightgreen;
+  background:$lightgreen url("../photos/greenzig.svg");
+  background-size: 10%;
   text-align: center;
   font-family: $opensans;
   overflow: hidden;
@@ -362,6 +376,8 @@ footer {
 
 .section4 {
   .grid {
+    background: #ddf1f3 url("../photos/waterdrop.svg");
+    background-size: 10%;
     .module {
       padding-top:0 auto;
     }
@@ -371,7 +387,7 @@ footer {
 
 .pencil {
   width:20%;
-  transform:rotate(135deg);
+  transform:rotate(80deg);
   
 }
 
