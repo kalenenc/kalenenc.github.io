@@ -162,9 +162,8 @@ footer {
         -webkit-box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
         -moz-box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
         box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47); }
-
-.tada {
-  animation: tada 1s both; }
+        .section2 .grid .social-media li i.tada {
+          animation: tada 1s ease-in-out; }
 
 .section3 {
   background: #DDF0C9 url("../photos/greenlines.svg");

@@ -18,8 +18,8 @@ $(".nav-icon").on("click", function(){
 $(function(){
 	beeJump();
   	setInterval(function(){ beeJump(); }, 5000);
-    // setInterval(function(){ callTada(); }, 1000);
     setInterval(function(){ movePencil(); }, 3000);
+    // setInterval(callTada, 4000);
 });
 
 
@@ -30,14 +30,24 @@ function beeJump() {
   $(".header svg").toggleClass("bee-jump");
 }
 
-// function callTada() {
-// 	var randNum = Math.floor(Math.random() * $(".section2 i").length) + 1;
-// 	$(".section2 i").eq(randNum).addClass("tada").siblings().removeClass("tada");
-// }
+function callTada() {
+		$(".section2 i").toggleClass("tada")
+		// .siblings().removeClass("tada");
+}
 
 function movePencil() {
 	$(".pencil").toggleClass("movePencil");
 }
+
+$(window).scroll(function() {
+   var hT = $('.scroll-to').offset().top,
+       hH = $('.scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       callTada();
+   }
+});
 
 
 });

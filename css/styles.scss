@@ -295,33 +295,35 @@ footer {
           border-radius:10px;
           -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
           -moz-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
-          box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
+          box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47); 
 
-         i.fa-twitter{
-
-         } 
-
-         i.fa-github {
-
-         }
-
-         i.fa-dribbble {
-
-         }
-
-         i.fa-linkedin {
-
-         }
+          &.tada {
+            animation: tada 1s ease-in-out;
+          }   
     }
+
+    // i.fa-twitter {
+    //   animation: tada 1s ease-in-out forwards 1s;
+    // }
+
+    // i.fa-github {
+    //   animation: tada 1s ease-in-out forwards 8s;
+    // }
+
+    // i.fa-dribbble {
+    //   animation: tada 1s ease-in-out forwards 4s;
+    // }
+
+    // i.fa-linkedin {
+    //   animation: tada 1s ease-in-out forwards 12s;
+    // }
  }
     
 }
   }
 }
 
-.tada {
-  animation: tada 1s both;
-}
+
 
 
 
