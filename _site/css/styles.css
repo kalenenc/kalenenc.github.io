@@ -243,14 +243,40 @@ footer {
     transform: rotate(80deg); } }
 .section5 {
   text-align: center;
-  background: #DDF0C9; }
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative; }
+
+.section5:after {
+  content: "";
+  background: #DDF0C9 url(../photos/words.jpg);
+  opacity: 0.1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .section6 {
   text-align: center;
-  background: #DDF0C9; }
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative; }
   .section6 .glasses {
     margin: 50px auto;
     width: 80%; }
+  .section6 .section6:after {
+    content: "";
+    background: #DDF0C9 url(..photos/sunglasses.svg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
 
 .cta {
   font-family: "Open Sans Condensed", sans-serif;
