@@ -187,7 +187,7 @@ nav {
 
 footer {
   background: $lightestgreen;
-  height:300px;
+  height:500px;
   text-align:center;
   .cta-container {
     padding-top: 20px;
@@ -198,11 +198,6 @@ footer {
     padding-top:20px;
     margin-top:20px;
   }
-
-  .social-media li {
-    margin-top:20px;
-  }
-
 }
 
 
@@ -274,8 +269,10 @@ footer {
       color: #54555c;
       margin-top:50px;
     }
+  }
+}
 
-    .social-media {
+.social-media {
       background:$lightgreen;
       border-radius:10px;
       padding:15px;
@@ -300,29 +297,9 @@ footer {
           &.tada {
             animation: tada 1s ease-in-out;
           }   
+        }
+      }  
     }
-
-    // i.fa-twitter {
-    //   animation: tada 1s ease-in-out forwards 1s;
-    // }
-
-    // i.fa-github {
-    //   animation: tada 1s ease-in-out forwards 8s;
-    // }
-
-    // i.fa-dribbble {
-    //   animation: tada 1s ease-in-out forwards 4s;
-    // }
-
-    // i.fa-linkedin {
-    //   animation: tada 1s ease-in-out forwards 12s;
-    // }
- }
-    
-}
-  }
-}
-
 
 
 
@@ -408,23 +385,29 @@ footer {
     background-size: 10%;
     .module {
       padding-top:0 auto;
-      &:last-of-type{
-        text-align: left;
-      }
+      
     }
    
   }
 }
 
+.duck-module {
+  text-align:right;
+}
+
+.pencil-module {
+  text-align:left;
+}
+
 .duck {
   width:70%;
-  margin-left:7em;
+  
 }
 
 .pencil {
   width:15%;
   transform:rotate(80deg);
-  margin-left:5em;
+  margin-left:115px;
   &.movePencil {
     animation: movePencil 1s ease-in-out forwards;
   }
@@ -454,6 +437,9 @@ footer {
   height:500px;
   display:block;
   position:relative;
+  .h2 {
+    padding-top: 30px;
+  }
 }
 
 
@@ -477,6 +463,9 @@ footer {
   height:500px;
   display:block;
   position:relative;
+  .h2 {
+    padding-top: 30px;
+  }
   .glasses {
     margin: 50px auto;
     width:80%;
