@@ -17,8 +17,9 @@ $(".nav-icon").on("click", function(){
 
 $(function(){
 	beeJump();
-  	setInterval(function(){ beeJump(); }, 5000);
-    setInterval(function(){ movePencil(); }, 3000);
+  setInterval(function(){ scrollTada(); }, 5000);
+  setInterval(function(){ beeJump(); }, 5000);
+  setInterval(function(){ movePencil(); }, 3000);
     // setInterval(callTada, 4000);
 });
 
@@ -33,6 +34,10 @@ function beeJump() {
 function callTada() {
 		$(".section2 i").toggleClass("tada")
 		// .siblings().removeClass("tada");
+}
+
+function scrollTada() {
+  $(".scroll").toggleClass("tada");
 }
 
 function movePencil() {

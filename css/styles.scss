@@ -21,6 +21,7 @@ $amazingpink: #CB0048;
 $prettyamazingpink: #C24571;
 $peach: #F5C3AB;
 $darkpurple: #4c356d;
+$richpurple: #5f2056;
 $darklime: #89C489;
 $lightblue: #d8fffc;
 $orange: #e64e25;
@@ -434,11 +435,24 @@ footer {
 
   text-align:center;
   width:100%;
-  height:500px;
+  height:40em;
   display:block;
   position:relative;
   .h2 {
     padding-top: 30px;
+  }
+
+  .scroll {
+    width:70%;
+      &.tada {
+         animation: tada 1s ease-in-out;
+     }
+  }
+
+  .blog-text {
+    text-transform: uppercase;
+    font-family: $opensans;
+    font-size:10em;
   }
 }
 
@@ -460,26 +474,28 @@ footer {
 .section6 {
   text-align:center;
   width:100%;
-  height:500px;
+  height:700px;
   display:block;
   position:relative;
+  background: $richpurple url(../photos/purplestar.svg);
+  background-size: 10%;
   .h2 {
     padding-top: 30px;
   }
   .glasses {
     margin: 50px auto;
-    width:80%;
+    width:50%;
   }
-  .section6:after {
-    content: "";
-    background: $lightgreen url(..photos/sunglasses.svg);
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    position:absolute;
-    z-index: -1;
-  }
+  // .section6:after {
+  //   content: "";
+  //   background: $richpurple url(..photos/purplestar.svg);
+  //   top:0;
+  //   bottom:0;
+  //   left:0;
+  //   right:0;
+  //   position:absolute;
+  //   z-index: -1;
+  // }
 }  
 
 
