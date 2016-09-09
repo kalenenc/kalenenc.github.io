@@ -19,14 +19,20 @@ $lightcreamsicle: #ffece2;
 $darkpink: #fd7d7d;
 $amazingpink: #CB0048;
 $prettyamazingpink: #C24571;
-$peach: #F5C3AB;
+$peach: #FFCDA4;
 $darkpurple: #4c356d;
 $richpurple: #5f2056;
 $darklime: #89C489;
 $lightblue: #d8fffc;
 $orange: #e64e25;
+$peachy: #ffd2b9;
 $gutter: 20px;
 
+// Palette
+$green: #B4DDA0;
+$blue: #276565;
+
+$ruby: #A94141;
 
   
   // ---------------------------------
@@ -188,16 +194,37 @@ nav {
 
 footer {
   background: $lightestgreen;
-  height:500px;
   text-align:center;
   .cta-container {
-    padding-top: 20px;
+    padding-top:50px;
+    .cta {
+      font-size: 2em;
+      h2 {
+        border: none;
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
   }
   h2 {
     font-family:$opensans;
     font-size:1.5em;
+    padding-top: 20px;
+    span {
+      color:$darkpink;
+    }
+  }
+  ul.social-media {
+    background: $lightestgreen;
+    box-shadow: none;
+    border-radius: 0;
     padding-top:20px;
-    margin-top:20px;
+    margin: 0;
+    li {
+      i {
+        color:$pink;
+      }
+    }
   }
 }
 
@@ -286,18 +313,25 @@ footer {
       display:inline-block;
       padding:10px;
       font-size:2em;
+      &:hover {
+        cursor: pointer;
+      }
         i {
           background:white;
-          color:$peach;
+          color:$peachy;
           padding:10px;
           border-radius:10px;
           -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
           -moz-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
           box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47); 
+          transition: color 0.3s ease-in-out;
 
           &.tada {
             animation: tada 1s ease-in-out;
           }   
+          &:hover {
+            color:$grey;
+          }
         }
       }  
     }
@@ -434,12 +468,10 @@ footer {
 .section5 {
 
   text-align:center;
-  width:100%;
-  height:40em;
   display:block;
   position:relative;
   .h2 {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 
   .scroll {
@@ -474,54 +506,56 @@ footer {
 .section6 {
   text-align:center;
   width:100%;
-  height:700px;
   display:block;
   position:relative;
   background: $richpurple url(../photos/purplestar.svg);
   background-size: 10%;
   .h2 {
-    padding-top: 30px;
+    padding-top: 50px;
+    color:white;
   }
   .glasses {
     margin: 50px auto;
     width:50%;
   }
-  // .section6:after {
-  //   content: "";
-  //   background: $richpurple url(..photos/purplestar.svg);
-  //   top:0;
-  //   bottom:0;
-  //   left:0;
-  //   right:0;
-  //   position:absolute;
-  //   z-index: -1;
-  // }
 }  
 
+// ---- CTA Section ----
 
+.cta-section {
+  background:$lightgreen url("../photos/greenlines.svg");
+  background-size: 10%;
+}
 
 .cta {
     font-family: $opensans;
-    font-size:3em;
     text-decoration: none;
     color:$pink;
+    text-align: center;
+    font-size: 9em;
+
     h2 {
       border:5px solid $pink;
-      margin: 20px auto;
-      width:35%;
+      margin: auto;
+      width:80%;
       padding:0;
       transition: all 0.3s ease-in-out; 
-    }
-    h2:hover {
-      color:white;
-      border:5px solid white;
-    }
-  }
+      &:last-child {
+        margin: 100px auto;
+      }
+      &:hover {
+         color:$grey;
+          border:5px solid $grey;
+      }
+     }
+    } 
+
+
 
 // ---- Seventh Section ----
 
 .section7 {
-  margin-top:300px;
+  margin:100px auto;
   font-family:$opensans;
   font-size: 3em;
   text-align:center;
@@ -530,6 +564,8 @@ footer {
     transform:rotate(50deg);
   }
 }
+
+
 
 
 // ---- ABOUT CSS ----
@@ -677,7 +713,7 @@ footer {
     width:70%;
     margin:0 auto;
     }
-  input, textarea {
+    input, textarea {
     width:100%;
     padding:5px;
     border:1px solid grey;
@@ -708,6 +744,52 @@ footer {
 
   label {
     text-align: left;
+  }
+
+  .word {
+    color: $peach;
+    font-size: 1.5em;
+
+  }
+
+  .hire {
+    font-family: $opensans;
+    text-align: center;
+    color:white;
+    .grid {
+      width:100%;
+      background: $blue;
+      padding: 20px;
+      h2 {
+        margin: 50px auto;
+        font-size: 2em;
+        text-align:center;
+        
+        &:first-of-type {
+          font-style: italic;
+        }
+      }
+      ul {
+        text-align: left;
+        margin-left: 100px;
+        li {
+          font-size: 1.3em;
+          line-height: 130%;
+          &:last-of-type {
+            margin-top: 20px;
+          }
+        }
+      }
+      p {
+        margin-top: 50px;
+        font-size: 1.3em;
+
+      }
+      a {
+        color:$peach;
+        text-decoration: none;
+      }
+    }
   }
 
 
@@ -959,7 +1041,7 @@ footer {
   display:flex;
 }
 
-.col-1-2  {
+.col-1-2, .col-1  {
   flex: 1;
 }
 

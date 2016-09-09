@@ -96,15 +96,29 @@ body, header.header {
     display: block !important; } }
 footer {
   background: #F5FAF0;
-  height: 500px;
   text-align: center; }
   footer .cta-container {
-    padding-top: 20px; }
+    padding-top: 50px; }
+    footer .cta-container .cta {
+      font-size: 2em; }
+      footer .cta-container .cta h2 {
+        border: none;
+        margin: 0 auto;
+        width: 50%; }
   footer h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.5em;
+    padding-top: 20px; }
+    footer h2 span {
+      color: #fd7d7d; }
+  footer ul.social-media {
+    background: #F5FAF0;
+    box-shadow: none;
+    border-radius: 0;
     padding-top: 20px;
-    margin-top: 20px; }
+    margin: 0; }
+    footer ul.social-media li i {
+      color: #F5ABAB; }
 
 .module {
   text-align: center;
@@ -135,7 +149,7 @@ footer {
   100% {
     transform: rotate(1turn); } }
 .section2 .grid {
-  background: #F5C3AB url("../photos/lilcomputer.svg");
+  background: #FFCDA4 url("../photos/lilcomputer.svg");
   background-size: 10%; }
   .section2 .grid .computer {
     margin: 5em 0; }
@@ -156,16 +170,21 @@ footer {
     display: inline-block;
     padding: 10px;
     font-size: 2em; }
+    .social-media li:hover {
+      cursor: pointer; }
     .social-media li i {
       background: white;
-      color: #F5C3AB;
+      color: #ffd2b9;
       padding: 10px;
       border-radius: 10px;
       -webkit-box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
       -moz-box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
-      box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47); }
+      box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
+      transition: color 0.3s ease-in-out; }
       .social-media li i.tada {
         animation: tada 1s ease-in-out; }
+      .social-media li i:hover {
+        color: #95AAA3; }
 
 .section3 {
   background: #DDF0C9 url("../photos/greenlines.svg");
@@ -258,12 +277,10 @@ footer {
     transform: rotate(80deg); } }
 .section5 {
   text-align: center;
-  width: 100%;
-  height: 40em;
   display: block;
   position: relative; }
   .section5 .h2 {
-    padding-top: 30px; }
+    padding-top: 50px; }
   .section5 .scroll {
     width: 70%; }
     .section5 .scroll.tada {
@@ -287,34 +304,41 @@ footer {
 .section6 {
   text-align: center;
   width: 100%;
-  height: 700px;
   display: block;
   position: relative;
   background: #5f2056 url(../photos/purplestar.svg);
   background-size: 10%; }
   .section6 .h2 {
-    padding-top: 30px; }
+    padding-top: 50px;
+    color: white; }
   .section6 .glasses {
     margin: 50px auto;
     width: 50%; }
 
+.cta-section {
+  background: #DDF0C9 url("../photos/greenlines.svg");
+  background-size: 10%; }
+
 .cta {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 3em;
   text-decoration: none;
-  color: #F5ABAB; }
+  color: #F5ABAB;
+  text-align: center;
+  font-size: 9em; }
   .cta h2 {
     border: 5px solid #F5ABAB;
-    margin: 20px auto;
-    width: 35%;
+    margin: auto;
+    width: 80%;
     padding: 0;
     transition: all 0.3s ease-in-out; }
-  .cta h2:hover {
-    color: white;
-    border: 5px solid white; }
+    .cta h2:last-child {
+      margin: 100px auto; }
+    .cta h2:hover {
+      color: #95AAA3;
+      border: 5px solid #95AAA3; }
 
 .section7 {
-  margin-top: 300px;
+  margin: 100px auto;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 3em;
   text-align: center; }
@@ -440,6 +464,39 @@ footer {
 
 label {
   text-align: left; }
+
+.word {
+  color: #FFCDA4;
+  font-size: 1.5em; }
+
+.hire {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: white; }
+  .hire .grid {
+    width: 100%;
+    background: #276565;
+    padding: 20px; }
+    .hire .grid h2 {
+      margin: 50px auto;
+      font-size: 2em;
+      text-align: center; }
+      .hire .grid h2:first-of-type {
+        font-style: italic; }
+    .hire .grid ul {
+      text-align: left;
+      margin-left: 100px; }
+      .hire .grid ul li {
+        font-size: 1.3em;
+        line-height: 130%; }
+        .hire .grid ul li:last-of-type {
+          margin-top: 20px; }
+    .hire .grid p {
+      margin-top: 50px;
+      font-size: 1.3em; }
+    .hire .grid a {
+      color: #FFCDA4;
+      text-decoration: none; }
 
 .flexbox {
   display: -webkit-flex;
@@ -597,7 +654,7 @@ label {
 .grid {
   display: flex; }
 
-.col-1-2 {
+.col-1-2, .col-1 {
   flex: 1; }
 
 @keyframes bounce {
