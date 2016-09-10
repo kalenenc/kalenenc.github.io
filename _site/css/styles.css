@@ -7,6 +7,13 @@ body, header.header {
   font-family: "Open Sans Condensed", sans-serif;
   color: #95AAA3; }
 
+h1 a {
+  transition: all 0.3s ease-in-out;
+  color: inherit;
+  text-decoration: none; }
+  h1 a:hover {
+    color: #95AAA3; }
+
 .header {
   text-align: center;
   background: #F5FAF0;
@@ -30,11 +37,12 @@ body, header.header {
         text-decoration: none;
         color: inherit;
         padding: 10px;
-        transition: all 0.3s ease-in-out; }
+        transition: all 0.5s ease-in-out; }
         .header ul li a:hover {
           cursor: pointer;
           color: #F5ABAB;
-          background: #ebfbdb; }
+          background: rgba(221, 240, 201, 0.3);
+          border-radius: 50%; }
   .header svg.bee-jump {
     animation: bounce 1.5s 1s ease-in-out; }
   .header p {
@@ -94,31 +102,35 @@ body, header.header {
 @media only screen and (min-width: 900px) {
   nav ul {
     display: block !important; } }
-footer {
+footer.footer {
   background: #F5FAF0;
-  text-align: center; }
-  footer .cta-container {
+  text-align: center;
+  border-top: 1px dashed #F5ABAB; }
+  footer.footer .cta-container {
     padding-top: 50px; }
-    footer .cta-container .cta {
+    footer.footer .cta-container .cta {
       font-size: 2em; }
-      footer .cta-container .cta h2 {
+      footer.footer .cta-container .cta h2 {
         border: none;
         margin: 0 auto;
         width: 50%; }
-  footer h2 {
+  footer.footer h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.5em;
     padding-top: 20px; }
-    footer h2 span {
+    footer.footer h2 span {
       color: #fd7d7d; }
-  footer ul.social-media {
+  footer.footer ul.social-media {
     background: #F5FAF0;
     box-shadow: none;
     border-radius: 0;
     padding-top: 20px;
     margin: 0; }
-    footer ul.social-media li i {
-      color: #F5ABAB; }
+    footer.footer ul.social-media li i {
+      color: #F5ABAB;
+      transition: all 0.3s ease-in-out; }
+      footer.footer ul.social-media li i:hover {
+        color: #95AAA3; }
 
 .module {
   text-align: center;
@@ -126,12 +138,17 @@ footer {
 
 .section1 .grid {
   background: #8e5066 url("../photos/squiggle.svg"); }
+.section1 .h2 {
+  padding-top: 30px; }
 .section1 .me {
-  width: 70%; }
+  width: 70%;
+  padding: 30px 0px; }
+.section1 .module:first-of-type {
+  padding: 0; }
 
 .star {
-  margin: 4.5em auto;
-  width: 70%; }
+  padding: 100px 80px;
+  width: 95%; }
   .star polygon {
     transform: rotate(45deg);
     /* doesn't work as intended in Firefox 
@@ -149,7 +166,7 @@ footer {
   100% {
     transform: rotate(1turn); } }
 .section2 .grid {
-  background: #FFCDA4 url("../photos/lilcomputer.svg");
+  background: #f5c3ac url("../photos/lilcomputer.svg");
   background-size: 10%; }
   .section2 .grid .computer {
     margin: 5em 0; }
@@ -193,7 +210,10 @@ footer {
   font-family: "Open Sans Condensed", sans-serif;
   overflow: hidden; }
   .section3 p.click-more {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out; }
+    .section3 p.click-more:hover {
+      color: #F5ABAB; }
   .section3 a {
     text-decoration: none;
     color: inherit; }
@@ -222,7 +242,7 @@ footer {
   font-size: 40px;
   position: absolute;
   color: white;
-  background: rgba(142, 80, 102, 0.7);
+  background: rgba(87, 119, 133, 0.8);
   width: 80%;
   height: 80%;
   bottom: 0;
@@ -239,6 +259,13 @@ footer {
   background-size: 10%; }
   .section4 .grid .module {
     padding-top: 0 auto; }
+    .section4 .grid .module h2 a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; }
+      .section4 .grid .module h2 a:hover {
+        color: white;
+        text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.47); }
 
 .duck-module {
   text-align: right; }
