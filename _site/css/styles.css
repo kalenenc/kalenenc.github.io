@@ -46,7 +46,7 @@ h1 a {
   .header svg {
     width: 40%; }
     .header svg.bee-jump {
-      animation: bounce 1.5s 1s ease-in-out; }
+      animation: bounce 1.5s 0.5s ease-in-out; }
   .header p {
     padding-top: 20px;
     font-size: 1.2em; }
@@ -160,9 +160,8 @@ footer.footer {
     width: 80%;
     animation: spin 10s linear infinite;
     animation-play-state: paused; }
-
-.star:hover polygon {
-  animation-play-state: running; }
+  .star .whole-star:hover polygon {
+    animation-play-state: running; }
 
 @keyframes spin {
   100% {
@@ -193,7 +192,7 @@ footer.footer {
       cursor: pointer; }
     .social-media li i {
       background: white;
-      color: #ffd2b9;
+      color: #F5ABAB;
       padding: 10px;
       border-radius: 10px;
       -webkit-box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
@@ -201,7 +200,7 @@ footer.footer {
       box-shadow: 9px 20px 41px -15px rgba(0, 0, 0, 0.47);
       transition: color 0.3s ease-in-out; }
       .social-media li i.tada {
-        animation: tada 1s ease-in-out; }
+        animation: tada 1s ease-in-out 0.5s; }
       .social-media li i:hover {
         color: #95AAA3; }
 
@@ -286,7 +285,7 @@ footer.footer {
   transform: rotate(80deg);
   margin-left: 115px; }
   .pencil.movePencil {
-    animation: movePencil 1s ease-in-out forwards; }
+    animation: movePencil 1s ease-in-out 0.5s forwards; }
 
 @keyframes movePencil {
   0% {
@@ -316,7 +315,7 @@ footer.footer {
   .section5 .scroll {
     width: 70%; }
     .section5 .scroll.tada {
-      animation: tada 1s ease-in-out; }
+      animation: tada 1s ease-in-out 0.5s; }
   .section5 .blog-text {
     text-transform: uppercase;
     font-family: "Open Sans Condensed", sans-serif;
@@ -384,7 +383,8 @@ footer.footer {
   text-align: center; }
   .section7 .bee {
     width: 30%;
-    transform: rotate(50deg); }
+    transform: rotate(50deg);
+    margin-top: 2em; }
 
 .about-section1, .about-section2, .about-section3 {
   text-align: center;
@@ -585,8 +585,9 @@ label {
     transform: rotate(320deg);
     position: absolute;
     right: -900px;
-    overflow: hidden;
-    animation: moveMe 1s ease-in-out 1s forwards; }
+    overflow: hidden; }
+    .doodles-section .flexbox .me-module .doodle-me.move-me {
+      animation: moveMe 1s ease-in-out forwards; }
 
 .desc {
   font-family: "Open Sans Condensed", sans-serif;

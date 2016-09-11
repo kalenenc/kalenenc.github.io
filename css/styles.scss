@@ -106,7 +106,7 @@ h1 {
   svg {
     width:40%;
     &.bee-jump {
-      animation: bounce 1.5s 1s ease-in-out;
+      animation: bounce 1.5s 0.5s ease-in-out;
     }
 
   }
@@ -295,13 +295,21 @@ footer.footer {
     width:80%;
     animation: spin 10s linear infinite;
     animation-play-state:paused;
+    
+  }
+
+  .whole-star {
+    &:hover polygon {
+       animation-play-state:running;
     }
+  }
+  
 }
 
 
- .star:hover polygon {
-      animation-play-state:running;
-      }
+ // .star:hover polygon {
+ //      // animation-play-state:running;
+ //      }
 
 
 
@@ -347,7 +355,7 @@ footer.footer {
       }
         i {
           background:white;
-          color:$peachy;
+          color:$pink;
           padding:10px;
           border-radius:10px;
           -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
@@ -356,7 +364,7 @@ footer.footer {
           transition: color 0.3s ease-in-out;
 
           &.tada {
-            animation: tada 1s ease-in-out;
+            animation: tada 1s ease-in-out 0.5s;
           }   
           &:hover {
             color:$grey;
@@ -364,9 +372,6 @@ footer.footer {
         }
       }  
     }
-
-
-
 
 
 // ---- Third Section ----
@@ -492,7 +497,7 @@ footer.footer {
   transform:rotate(80deg);
   margin-left:115px;
   &.movePencil {
-    animation: movePencil 1s ease-in-out forwards;
+    animation: movePencil 1s ease-in-out 0.5s forwards;
   }
   
 }
@@ -525,7 +530,7 @@ footer.footer {
   .scroll {
     width:70%;
       &.tada {
-         animation: tada 1s ease-in-out;
+         animation: tada 1s ease-in-out 0.5s;
      }
   }
 
@@ -620,6 +625,7 @@ footer.footer {
   .bee {
     width:30%;
     transform:rotate(50deg);
+    margin-top:2em;
   }
 }
 
@@ -921,7 +927,10 @@ footer.footer {
         position:absolute;
         right:-900px;
         overflow: hidden;
-        animation: moveMe 1s ease-in-out 1s forwards;
+        &.move-me {
+          animation: moveMe 1s ease-in-out forwards;
+        }
+        
       }
     }
   }
