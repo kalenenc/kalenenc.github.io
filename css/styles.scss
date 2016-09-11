@@ -104,6 +104,7 @@ h1 {
     }
   }
   svg {
+    width:40%;
     &.bee-jump {
       animation: bounce 1.5s 1s ease-in-out;
     }
@@ -889,11 +890,11 @@ footer.footer {
   .flexbox {
       [class*='col-1']:nth-child(1) {
           padding:30px;
-          background: $blue;
+           background: $blue;
           order: 0;
         }
         [class*='col-1']:nth-child(2) {
-          background: $darkpink;
+           background: $blue;
           order: 1;
         }
      .doodle-text-module {
@@ -914,15 +915,23 @@ footer.footer {
       .me-module {
         position:relative;
         height:100vh;
-        .me {
+        .doodle-me {
         width:80%;
         transform: rotate(320deg);
         position:absolute;
         right:-900px;
+        overflow: hidden;
         animation: moveMe 1s ease-in-out 1s forwards;
       }
     }
   }
+}
+
+.desc {
+  font-family: $opensans;
+  margin-bottom:20px;
+  color: white;
+  font-size:2em;
 }
 
 @keyframes moveMe {
@@ -930,7 +939,14 @@ footer.footer {
 }
 
 .doodles-section2 {
+  svg {
+    width:90%;
+  }
   background: $creamsicle;
+  img {
+    margin-top:2em;
+    width: 90%;
+  }
   .col-1-2:first-of-type{
     background: #FDB77D;
   }
@@ -940,13 +956,28 @@ footer.footer {
   background: $purp;
   .col-1-2:first-of-type{
     background: #AF3F7E;
+    img {
+      padding-top:5.5em;
+    }
   }
 }
 
+.doodle-pencil {
+  width:20%;
+  transform:rotate(45deg);
+}
+
+
 .doodles-section4 {
   background: #FD7D7D;
+  .module {
+    img {
+      width:70%;
+    }
+  }
   .col-1-2:first-of-type{
     background: #FFA4A4;
+   
   }
 }
 

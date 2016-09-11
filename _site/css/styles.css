@@ -43,8 +43,10 @@ h1 a {
           color: #F5ABAB;
           background: rgba(221, 240, 201, 0.3);
           border-radius: 50%; }
-  .header svg.bee-jump {
-    animation: bounce 1.5s 1s ease-in-out; }
+  .header svg {
+    width: 40%; }
+    .header svg.bee-jump {
+      animation: bounce 1.5s 1s ease-in-out; }
   .header p {
     padding-top: 20px;
     font-size: 1.2em; }
@@ -562,7 +564,7 @@ label {
   background: #276565;
   order: 0; }
 .doodles-section .flexbox [class*='col-1']:nth-child(2) {
-  background: #fd7d7d;
+  background: #276565;
   order: 1; }
 .doodles-section .flexbox .doodle-text-module {
   font-family: "Open Sans Condensed", sans-serif;
@@ -578,18 +580,30 @@ label {
 .doodles-section .flexbox .me-module {
   position: relative;
   height: 100vh; }
-  .doodles-section .flexbox .me-module .me {
+  .doodles-section .flexbox .me-module .doodle-me {
     width: 80%;
     transform: rotate(320deg);
     position: absolute;
     right: -900px;
+    overflow: hidden;
     animation: moveMe 1s ease-in-out 1s forwards; }
+
+.desc {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2em; }
 
 @keyframes moveMe {
   100% {
     right: -190px; } }
 .doodles-section2 {
   background: #ffd2b9; }
+  .doodles-section2 svg {
+    width: 90%; }
+  .doodles-section2 img {
+    margin-top: 2em;
+    width: 90%; }
   .doodles-section2 .col-1-2:first-of-type {
     background: #FDB77D; }
 
@@ -597,9 +611,17 @@ label {
   background: #CB649E; }
   .doodles-section3 .col-1-2:first-of-type {
     background: #AF3F7E; }
+    .doodles-section3 .col-1-2:first-of-type img {
+      padding-top: 5.5em; }
+
+.doodle-pencil {
+  width: 20%;
+  transform: rotate(45deg); }
 
 .doodles-section4 {
   background: #FD7D7D; }
+  .doodles-section4 .module img {
+    width: 70%; }
   .doodles-section4 .col-1-2:first-of-type {
     background: #FFA4A4; }
 

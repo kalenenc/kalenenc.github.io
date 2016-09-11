@@ -55,6 +55,11 @@ $(window).scroll(function() {
 });
 
 
+var $doodle_me = $(".doodle-me");
+var $window = $(window);
+
+$window.on('scroll resize', check_if_in_view);
+
 });
 
 
