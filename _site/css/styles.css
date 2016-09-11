@@ -274,7 +274,10 @@ footer.footer {
   text-align: left; }
 
 .duck {
-  width: 70%; }
+  width: 70%;
+  transition: transform 0.3s ease-in-out; }
+  .duck:hover {
+    transform: scale(1.09); }
 
 .pencil {
   width: 15%;
@@ -315,7 +318,15 @@ footer.footer {
   .section5 .blog-text {
     text-transform: uppercase;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 10em; }
+    font-size: 9em;
+    margin-top: 30px; }
+    .section5 .blog-text a.link {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; }
+      .section5 .blog-text a.link:hover {
+        color: #fd7d7d;
+        text-shadow: 5px 2px 0px grey; }
 
 .section5:after {
   content: "";
@@ -402,8 +413,8 @@ footer.footer {
     .about-section4 .about-banner h2 {
       font-family: "Sacramento", cursive;
       font-size: 3em; }
-    .about-section4 .about-banner button {
-      margin-top: 1em;
+    .about-section4 .about-banner a.button {
+      margin-top: 5em;
       background: #F5ABAB;
       color: white;
       padding: 15px;
@@ -411,7 +422,12 @@ footer.footer {
       border-radius: 5px;
       box-shadow: 0px 5px 10px #888888;
       font-family: "Open Sans Condensed", sans-serif;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease-in-out; }
+      .about-section4 .about-banner a.button:hover {
+        background: #B4DDA0; }
   .about-section4 .about-banner:after {
     content: "";
     background: #F5FAF0 url("../photos/bee.svg") no-repeat fixed right;
