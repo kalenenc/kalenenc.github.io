@@ -414,7 +414,7 @@ footer.footer {
       font-family: "Sacramento", cursive;
       font-size: 3em; }
     .about-section4 .about-banner a.button {
-      margin-top: 5em;
+      margin-top: 1em;
       background: #F5ABAB;
       color: white;
       padding: 15px;
@@ -471,6 +471,9 @@ footer.footer {
   .text-module p {
     margin-top: 20px;
     font-size: 2em; }
+  .text-module a {
+    text-decoration: none;
+    color: #276565; }
 
 .form-module {
   font-family: "Open Sans Condensed", sans-serif;
@@ -503,7 +506,8 @@ footer.footer {
     border-radius: 5px;
     box-shadow: 0px 5px 10px #888888;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    cursor: pointer; }
 
 label {
   text-align: left; }
@@ -554,10 +558,11 @@ label {
     order: 1; }
 
 .doodles-section .flexbox [class*='col-1']:nth-child(1) {
-  background: #ffd2b9;
+  padding: 30px;
+  background: #276565;
   order: 0; }
 .doodles-section .flexbox [class*='col-1']:nth-child(2) {
-  background: #DDF0C9;
+  background: #fd7d7d;
   order: 1; }
 .doodles-section .flexbox .doodle-text-module {
   font-family: "Open Sans Condensed", sans-serif;
@@ -584,15 +589,23 @@ label {
   100% {
     right: -190px; } }
 .doodles-section2 {
-  background: #fd7d7d; }
+  background: #ffd2b9; }
+  .doodles-section2 .col-1-2:first-of-type {
+    background: #FDB77D; }
 
 .doodles-section3 {
-  background: pink; }
+  background: #CB649E; }
+  .doodles-section3 .col-1-2:first-of-type {
+    background: #AF3F7E; }
+
+.doodles-section4 {
+  background: #FD7D7D; }
+  .doodles-section4 .col-1-2:first-of-type {
+    background: #FFA4A4; }
 
 .port {
-  background: grey;
-  z-index: -2;
-  position: relative; }
+  background: rgba(84, 85, 92, 0.5);
+  z-index: -2; }
 
 .port:after {
   content: "";
@@ -607,6 +620,8 @@ label {
 .dog-website {
   height: 50em;
   position: relative; }
+  .dog-website a {
+    z-index: 1; }
 
 .dog-website:after {
   content: "";

@@ -26,6 +26,7 @@ $darklime: #89C489;
 $lightblue: #d8fffc;
 $orange: #e64e25;
 $peachy: #ffd2b9;
+$purp: #CB649E;
 $gutter: 20px;
 
 // Palette
@@ -674,7 +675,7 @@ footer.footer {
       }
 
       a.button {
-        margin-top:5em;
+        margin-top:1em;
         background:$pink;
         color:white;
         padding:15px;
@@ -760,6 +761,11 @@ footer.footer {
       margin-top:20px;
       font-size:2em;
     }
+
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
 }
 
 
@@ -801,6 +807,7 @@ footer.footer {
     box-shadow: 0px 5px 10px #888888;
     font-family:$opensans;
     font-size:1.5em;
+    cursor: pointer;
   }
 }
 
@@ -881,11 +888,12 @@ footer.footer {
 .doodles-section {
   .flexbox {
       [class*='col-1']:nth-child(1) {
-          background: $creamsicle;
+          padding:30px;
+          background: $blue;
           order: 0;
         }
         [class*='col-1']:nth-child(2) {
-          background: $lightgreen;
+          background: $darkpink;
           order: 1;
         }
      .doodle-text-module {
@@ -922,19 +930,32 @@ footer.footer {
 }
 
 .doodles-section2 {
-  background: $darkpink;
+  background: $creamsicle;
+  .col-1-2:first-of-type{
+    background: #FDB77D;
+  }
 }
 
 .doodles-section3 {
-  background: pink;
+  background: $purp;
+  .col-1-2:first-of-type{
+    background: #AF3F7E;
+  }
+}
+
+.doodles-section4 {
+  background: #FD7D7D;
+  .col-1-2:first-of-type{
+    background: #FFA4A4;
+  }
 }
 
 // --- Portfolio ----
 
 .port {
-    background:grey;
+    background: rgba(84,85,92,0.5);
     z-index: -2;
-    position:relative;
+    
 
 }
 
@@ -953,6 +974,10 @@ footer.footer {
   
   height:50em;
   position:relative;
+
+  a {
+    z-index: 1;
+  }
 }
 
 .dog-website:after {
@@ -1107,6 +1132,8 @@ footer.footer {
 .col-1-2, .col-1  {
   flex: 1;
 }
+
+
 
 // @media only screen and (max-width: 900px) {
 //   .grid {
