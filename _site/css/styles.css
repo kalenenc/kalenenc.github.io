@@ -464,6 +464,21 @@ footer.footer {
   .blog p {
     color: #95AAA3; }
 
+.post {
+  width: 50%;
+  margin: 8em auto;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.1px; }
+  .post h2 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Sacramento", cursive;
+    color: #F5ABAB; }
+  .post p {
+    font-size: 1.3em; }
+
 .text-module {
   color: white;
   font-family: "Open Sans Condensed", sans-serif; }

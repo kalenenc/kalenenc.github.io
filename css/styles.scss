@@ -753,6 +753,24 @@ footer.footer {
   }
 }
 
+.post {
+  width:50%;
+  margin: 8em auto;
+  font-family: $opensans;
+  line-height: 1.5em;
+  letter-spacing: 0.1px;
+  h2 {
+    font-size:4em;
+    text-align:center;
+    margin-bottom:30px;
+    font-family: $sacramento;
+    color: $pink;
+  }
+  p {
+    font-size: 1.3em;
+  }
+}
+
 // ---- Contact ----
 
 .text-module {
@@ -1125,6 +1143,7 @@ footer.footer {
     color:$pink;
   }
 }
+
 
 
 // ---- Grid ----
