@@ -268,6 +268,7 @@ footer.footer {
 
      .h2 {
       padding-top: 30px;
+      color: #71608E;
      }
 
      .me {
@@ -283,10 +284,11 @@ footer.footer {
 }
 
 .star {
+  .st0 {
+    fill: #ebe9ef;
+}
   padding: 100px 80px;
   width: 95%;
-
-
   polygon {
     transform: rotate(45deg);
   /* doesn't work as intended in Firefox 
@@ -578,7 +580,7 @@ footer.footer {
   position:relative;
   // background: $richpurple url(../photos/purplestar.svg);
   // background-size: 10%;
-  background: #aa9bbf;
+  background: $pink;
   .h2 {
     padding-top: 50px;
     color:white;
