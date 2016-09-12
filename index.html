@@ -11,17 +11,20 @@ layout: default
 				<div class="module">
 					<h2 class="h2">I'm a girl...</h2>
 					
-					<a href="{{site.url}}/about">
-					{% include star.html %}
-					</a>
-					
-				
+						{% include me.html %}
 
 				</div>
 			</div>
 			<div class="col-1-2">
 				<div class="module">
-					{% include me.html %}
+					
+					
+					<a href="{{site.url}}/about">
+					{% include star.html %}
+					</a>
+					
+					
+
 				</div>
 			</div>
 		</div>
@@ -119,7 +122,7 @@ layout: default
 
 <!-- Section 5  -->
 	<section class="section5">
-		<h2 class="h2">... and writes stuff.</h2>
+		<a href="{{site.url}}/blog"><h2 class="h2">... and writes stuff.</h2></a>
 		<div class="grid">
 			<div class="col-1-2">
 				<div class="module">
@@ -127,9 +130,25 @@ layout: default
 				</div>
 			</div>
 			<div class="col-1-2">
-				<div class="module">
-					<h2 class="blog-text"><a class="link" href="{{site.url}}/blog">MY BLOG <i class="fa fa-caret-right" aria-hidden="true"></i></a></h2>
-				</div>
+				
+					<div class="blog">
+						<ul>
+  							{% for post in site.posts limit: 1 %}
+   							 <li>
+    							<div class="date">{{ post.date | date: '%B %d, %Y' }}</div>
+     								<a href="{{site.url}}/{{post.url}}">{{ post.title }}</a>
+     							<div>
+      							<p>
+      							{{ post.excerpt }}
+      		<!-- {{ post.content | strip_html | truncatewords:75}} -->
+      							</p>
+      				</div>
+      
+    						</li>
+  							{% endfor %}
+						</ul>
+					</div>
+
 			</div>
 		</div>
 	</section>
