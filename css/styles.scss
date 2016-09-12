@@ -1074,7 +1074,7 @@ footer.footer {
 
 .js-game:after {
   content: "";
-  background: url("http://www.nekeran.com/i/dog-desktop-background-wallpaper.jpg") no-repeat fixed center;
+  background: url("{{site.url}}/../photos/js-hangman.svg") no-repeat fixed center;
   opacity: 0.3;
   top: 0;
   left: 0;
