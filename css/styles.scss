@@ -106,7 +106,7 @@ h1 {
   svg {
     width:40%;
     &.bee-jump {
-      animation: bounce 1.5s 0.5s ease-in-out;
+      animation: bounce 1.5s 1s ease-in-out;
     }
 
   }
@@ -236,11 +236,12 @@ footer.footer {
     padding-top:20px;
     margin: 0;
     li {
+      font-size: 1em;
       i {
-        color:$pink;
+        color:$grey;
         transition: all 0.3s ease-in-out;
         &:hover {
-          color: $grey;
+          color: $pink;
         }
       }
     }
@@ -262,7 +263,7 @@ footer.footer {
 
 .section1 {
      .grid {
-      background: #8e5066 url("../photos/squiggle.svg");
+        background: -webkit-linear-gradient(white, #9185a7);
      }
 
      .h2 {
@@ -322,51 +323,54 @@ footer.footer {
 
 .section2 {
   .grid {
-    background: #f5c3ac url("../photos/lilcomputer.svg");
-    background-size:10%;
+    // background: #f5c3ac url("../photos/lilcomputer.svg");
+    // background-size:10%;
+    background: #9185A7;
 
     .computer {
       margin:5em 0;
     }
 
     .h2 {
-      color: #54555c;
+      color: $pink;
       margin-top:50px;
     }
   }
 }
 
 .social-media {
-      background:$lightgreen;
-      border-radius:10px;
+      // background:$lightgreen;
+      // border-radius:10px;
       padding:15px;
       margin-top:50px;
-      -webkit-box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
-      -moz-box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
-      box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
+      // -webkit-box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
+      // -moz-box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
+      // box-shadow: 17px 20px 60px -4px rgba(0,0,0,0.29);
     li {
       list-style-type: none;
       display:inline-block;
       padding:10px;
-      font-size:2em;
+      font-size: 2em;
       &:hover {
         cursor: pointer;
       }
         i {
-          background:white;
-          color:$pink;
+          // background:white;
+          color:white;
           padding:10px;
           border-radius:10px;
-          -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
-          -moz-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
-          box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47); 
+          font-size:2em;
+          // -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
+          // -moz-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
+          // box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47); 
           transition: color 0.3s ease-in-out;
 
+
           &.tada {
-            animation: tada 1s ease-in-out 0.5s;
+            animation: tada 1s ease-in-out 1s;
           }   
           &:hover {
-            color:$grey;
+            color:$pink;
           }
         }
       }  
@@ -386,8 +390,9 @@ footer.footer {
   p.click-more {
     font-size:1.5em;
     transition: color 0.3s ease-in-out;
+    color: $pink;
     &:hover {
-      color: $pink;
+      color: $grey;
     }
   }
   a {
@@ -459,6 +464,7 @@ footer.footer {
     .module {
       padding-top:0 auto;
       h2 {
+        color: #8B9AC4;
         a {
           color:inherit;
           text-decoration: none;
@@ -485,10 +491,10 @@ footer.footer {
 
 .duck {
   width:70%;
-  transition:transform 0.3s ease-in-out;
-  &:hover {
-    transform:scale(1.09);
-  }
+  transition:transform 0.4s ease-in-out;
+  // &:hover {
+  //   transform:scale(1.02);
+  // }
 }
 
 .pencil {
@@ -529,7 +535,7 @@ footer.footer {
   .scroll {
     width:70%;
       &.tada {
-         animation: tada 1s ease-in-out 0.5s;
+         animation: tada 1s ease-in-out 1s;
      }
   }
 
@@ -554,7 +560,7 @@ footer.footer {
 .section5:after {
   content: "";
   background:$lightgreen url(../photos/words.jpg);
-  opacity: 0.1;
+  opacity: 0.04;
   top: 0;
   bottom: 0;
   left: 0;
@@ -570,8 +576,9 @@ footer.footer {
   width:100%;
   display:block;
   position:relative;
-  background: $richpurple url(../photos/purplestar.svg);
-  background-size: 10%;
+  // background: $richpurple url(../photos/purplestar.svg);
+  // background-size: 10%;
+  background: #aa9bbf;
   .h2 {
     padding-top: 50px;
     color:white;
@@ -730,8 +737,8 @@ footer.footer {
 // ---- Blog ----
 
 .blog {
-
-  text-align: center;
+  width:50%;
+  margin: 0 auto;
 
   ul {
     margin-bottom:150px;
@@ -739,6 +746,12 @@ footer.footer {
        margin-top:150px;
        font-family: $opensans;
        color: $pink;
+      .date {
+        color: $grey;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        margin-right:3.3em;
+      } 
       a {
         text-decoration: none;
         color: $pink;
@@ -749,16 +762,20 @@ footer.footer {
   }
 
   p {
-    color:$grey;
+    color: #5a756c;
+    font-size: 1.5em;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-top:17px;
   }
 }
 
 .post {
-  width:50%;
+  width:60%;
   margin: 8em auto;
   font-family: $opensans;
-  line-height: 1.5em;
-  letter-spacing: 0.1px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
   h2 {
     font-size:4em;
     text-align:center;
@@ -767,7 +784,12 @@ footer.footer {
     color: $pink;
   }
   p {
-    font-size: 1.3em;
+    color:#5a756c;
+    font-size: 1.5em;
+    margin-bottom:30px;
+    &:first-of-type {
+      padding-top: 30px;
+    }
   }
 }
 
