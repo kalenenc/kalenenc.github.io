@@ -296,6 +296,8 @@ footer.footer {
   margin-left: 115px; }
   .pencil.movePencil {
     animation: movePencil 1s ease-in-out 0.5s forwards; }
+  .pencil.smallMovePencil {
+    animation: smallMovePencil 1s ease-in-out 0.5s forwards; }
 
 @keyframes movePencil {
   0% {
@@ -345,9 +347,7 @@ footer.footer {
     text-align: center; }
     .pencil-module .pencil {
       margin: 0;
-      transform: rotate(180deg); }
-      .pencil-module .pencil.smallMovePencil {
-        animation: smallMovePencil 1s ease-in-out 0.5s forwards; } }
+      transform: rotate(180deg); } }
 .section5 {
   text-align: center;
   display: block;

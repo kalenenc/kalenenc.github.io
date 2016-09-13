@@ -17,10 +17,11 @@ $(".nav-icon").on("click", function(){
 
 $(function(){
 	// beeJump();
-  setInterval(function(){ scrollTada(); }, 5000);
+  // setInterval(function(){ scrollTada(); }, 5000);
   // setInterval(function(){ beeJump(); }, 5000);
-  setInterval(function(){ movePencil(); }, 3000);
+   // setInterval(function(){ movePencil(); }, 3000);
     // setInterval(callTada, 4000);
+
 });
 
 
@@ -43,6 +44,10 @@ $(function(){
 
 function movePencil() {
 	$(".pencil").toggleClass("movePencil");
+}
+
+function smallMovePencil() {
+  $(".pencil").toggleClass("smallMovePencil");
 }
 
 // $(window).scroll(function() {
@@ -103,15 +108,46 @@ function check_if_pencil_in_view() {
 
     //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
+        (element_top_position <= window_bottom_position) && ($(window).width() > 900)) {
       $element.addClass('movePencil');
     } else {
       $element.removeClass('movePencil');
+
     }
   });
 }
 
 $window.on('scroll resize', check_if_pencil_in_view);
+$window.trigger('scroll');
+
+// ---
+
+var $animated_smallPencil = $(".pencil ");
+var $window = $(window);
+
+function check_if_smallPencil_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animated_smallPencil, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position) && ($(window).width() < 900)) {
+      $element.addClass('smallMovePencil');
+    } else {
+      $element.removeClass('smallMovePencil');
+
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_smallPencil_in_view);
 $window.trigger('scroll');
 
 // ----

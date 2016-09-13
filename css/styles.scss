@@ -531,6 +531,9 @@ footer.footer {
   &.movePencil {
     animation: movePencil 1s ease-in-out 0.5s forwards;
   }
+  &.smallMovePencil {
+    animation: smallMovePencil 1s ease-in-out 0.5s forwards;
+  }
   
 }
 
@@ -571,9 +574,9 @@ footer.footer {
     .pencil {
       margin:0;
       transform: rotate(180deg);
-      &.smallMovePencil {
-        animation: smallMovePencil 1s ease-in-out 0.5s forwards;
-      }
+      // &.smallMovePencil {
+      //   animation: smallMovePencil 1s ease-in-out 0.5s forwards;
+      // }
     }
   }
 }
