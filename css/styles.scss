@@ -4,6 +4,7 @@
 
 $sacramento: 'Sacramento', cursive;
 $opensans:'Open Sans Condensed', sans-serif;
+$lato: 'Lato', sans-serif;
 $grey: #95AAA3;
 $pink: #F5ABAB;
 $lightpink: #FAC5C9;
@@ -28,7 +29,6 @@ $orange: #e64e25;
 $peachy: #ffd2b9;
 $purp: #CB649E;
 $gutter: 20px;
-
 // Palette
 $green: #B4DDA0;
 $blue: #276565;
@@ -73,7 +73,7 @@ h1 {
   h1 {
     font-family: $sacramento;
     color: $pink;
-    font-size: 3em;
+    font-size: 4em;
     margin: 0;
     padding: 20px;
 
@@ -111,8 +111,8 @@ h1 {
 
   }
   p {
-    padding-top:20px;
-    font-size:1.2em;
+    padding:30px;
+    font-size:1.6em;
   }
  
 }
@@ -196,12 +196,19 @@ nav {
 }
 
 @media only screen and (min-width: 900px) {
-  nav {
+  header {
+    nav {
     ul{
       display:block !important;
     }
+   }
+
   }
+  
+
 }
+
+
 
 
 // ---- Footer ---- 
@@ -212,12 +219,16 @@ footer.footer {
   border-top: 1px dashed $pink;
   .cta-container {
     padding-top:50px;
-    .cta {
-      font-size: 2em;
-      h2 {
-        border: none;
-        margin: 0 auto;
-        width: 50%;
+    h2 {
+      color: $pink;
+      font-size:3em;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        &:hover  {
+        color: $grey;
       }
     }
   }
@@ -229,6 +240,9 @@ footer.footer {
       color:$darkpink;
     }
   }
+
+
+
   ul.social-media {
     background: $lightestgreen;
     box-shadow: none;
@@ -304,22 +318,27 @@ footer.footer {
     &:hover polygon {
        animation-play-state:running;
     }
-  }
-  
+  } 
 }
-
-
- // .star:hover polygon {
- //      // animation-play-state:running;
- //      }
-
-
 
 @keyframes spin {
   100% {
     transform: rotate(1turn);
   }
 }
+
+// Media Queries
+
+@media only screen and (max-width: 900px) {
+  .star {
+    padding: 50px 50px;
+  }
+
+  .module {
+    padding:20px;
+  }
+}
+
 
 // ---- Second Section ----
 
@@ -378,6 +397,13 @@ footer.footer {
       }  
     }
 
+// Media queries
+
+@media only screen and (max-width: 900px) {
+  .section2 {
+
+  }
+}
 
 // ---- Third Section ----
 
@@ -444,16 +470,17 @@ footer.footer {
   padding-top:30px;
   transition: all 0.3s ease-in-out;
   transform:translateX(-54%) translateY(100%) scale(0.1);
-  
-
 }
 
 .image-container:hover .thumb {
   transform: translateY(0) translateX(-54%) scale(1);
-
 }
 
-
+@media only screen and (max-width: 900px) {
+  .image-container {
+    width: 100%;
+  }
+}
 
 
 
@@ -463,10 +490,10 @@ footer.footer {
   .grid {
     background: #ddf1f3 url("../photos/waterdrop.svg");
     background-size: 10%;
-    .module {
-      padding-top:0 auto;
       h2 {
         color: #8B9AC4;
+        text-align: center;
+        padding-top: 30px;
         a {
           color:inherit;
           text-decoration: none;
@@ -477,9 +504,10 @@ footer.footer {
             
           }
         } 
-      }
-        
-      }
+      } 
+    .module {
+      padding-top:0 auto;
+    }
   }
 }
 
@@ -494,9 +522,6 @@ footer.footer {
 .duck {
   width:70%;
   transition:transform 0.4s ease-in-out;
-  // &:hover {
-  //   transform:scale(1.02);
-  // }
 }
 
 .pencil {
@@ -519,8 +544,41 @@ footer.footer {
   70% {transform:rotate(80deg);}
   80% {transform:rotate(70deg);}
   100% {transform:rotate(80deg);}
-
 }
+
+@keyframes smallMovePencil {
+  0% {transform:rotate(180deg);}
+  20% {transform:rotate(190deg);}
+  30% {transform:rotate(180deg);}
+  40% {transform:rotate(170deg);}
+  50% {transform:rotate(180deg);}
+  60% {transform:rotate(190deg);}
+  70% {transform:rotate(180deg);}
+  80% {transform:rotate(170deg);}
+  100% {transform:rotate(180deg);}
+}
+
+@media only screen and (max-width: 900px) {
+  .duck-module {
+    text-align: center;
+    .duck {
+    width:80%;
+   }
+  }
+
+  .pencil-module {
+    text-align: center;
+    .pencil {
+      margin:0;
+      transform: rotate(180deg);
+      &.smallMovePencil {
+        animation: smallMovePencil 1s ease-in-out 0.5s forwards;
+      }
+    }
+  }
+}
+
+
 
 // ---- Fifth Section ----
 
@@ -549,9 +607,13 @@ footer.footer {
   .blog {
     width: 100%;
     text-align: left;
-    li {
+    ul {
+      margin-bottom:0;
+      li {
       margin-top: 30px;
+      }
     }
+    
   }
 }
 
@@ -588,36 +650,63 @@ footer.footer {
   }
 }  
 
+
+
 // ---- CTA Section ----
 
 .cta-section {
   background:$lightgreen url("../photos/greenlines.svg");
   background-size: 10%;
-}
-
-.cta {
-    font-family: $opensans;
-    text-decoration: none;
-    color:$pink;
-    text-align: center;
-    font-size: 9em;
-
+  .grid {
+    .module {
+      padding: 100px;
+    
     h2 {
-      border:5px solid $pink;
-      margin: auto;
-      width:80%;
-      padding:0;
-      transition: all 0.3s ease-in-out; 
-      &:last-child {
-        margin: 100px auto;
-      }
-      &:hover {
-         color:$grey;
-          border:5px solid $grey;
-      }
-     }
-    } 
+      color: $pink;
+      font-family: $opensans;
+      font-size: 4em;
 
+      &:first-of-type {
+        padding-bottom: 100px;
+      }
+    a {
+      text-decoration: none;
+      color:inherit;
+      border: 4px solid $pink;
+      padding:20px;
+      background: #fffafa;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #fffafa;
+        background: $pink;
+        border-color: #fffafa;
+      }
+    }
+  }
+  }
+  
+  }
+  
+} 
+
+
+
+
+// Media Queries
+
+@media only screen and (max-width: 900px) {
+  .cta-section {
+    .grid {
+      .module {
+      padding: 100px 0;
+    }
+  }
+    
+  }
+ 
+}
 
 
 // ---- Seventh Section ----
@@ -642,17 +731,17 @@ footer.footer {
 .about-section1, .about-section2, .about-section3 {
   text-align:center;
   color:white;
-  font-family: $opensans;
+  font-family: $lato;
   
   h2 {
-
+    font-family: $opensans;
     font-weight: 800;
     font-size:15vh;
     margin-top:1.3em;
     margin-bottom:0.3em;
   }
   p {
-    font-size: 2em;
+    font-size: 1.6em;
     padding:0 20px;
   }
 
@@ -743,7 +832,7 @@ footer.footer {
     margin-bottom:150px;
     li {
        margin-top:150px;
-       font-family: $opensans;
+       font-family: $lato;
        color: $pink;
       .date {
         color: $grey;
@@ -772,7 +861,7 @@ footer.footer {
 .post {
   width:60%;
   margin: 8em auto;
-  font-family: $opensans;
+  font-family: $lato;
   line-height: 30px;
   letter-spacing: 0.2px;
   h2 {
@@ -796,10 +885,11 @@ footer.footer {
 
 .text-module {
   color:white;
-  font-family:$opensans;
+  font-family:$lato;
   h2 {
     font-size:10em;
     text-transform: uppercase;
+    font-family: $opensans;
      
   }
    p {
@@ -816,7 +906,7 @@ footer.footer {
 
 
 .form-module {
-  font-family: $opensans;
+  font-family: $lato;
   text-align: left;
   background: $creamsicle;
   font-size: 1.5em;
@@ -835,7 +925,7 @@ footer.footer {
     box-shadow: none;
     font-size: 15px;
     box-shadow: none;
-    font-family: $opensans;
+    font-family: $lato;
   }
   input[type="text"], input[type="email"] {   
     height:40px;  
@@ -867,7 +957,7 @@ footer.footer {
   }
 
   .hire {
-    font-family: $opensans;
+    font-family: $lato;
     text-align: center;
     color:white;
     .grid {
@@ -883,7 +973,7 @@ footer.footer {
           font-style: italic;
         }
       }
-      ul {
+      ul.job-info {
         text-align: left;
         margin-left: 100px;
         li {
@@ -906,6 +996,16 @@ footer.footer {
     }
   }
 
+@media only screen and (max-width: 900px) {
+  .hire {
+    .grid {
+      ul.job-info {
+        margin-left: 40px;
+      }
+    }
+  }
+ 
+}
 
 // ---- Flexbox ----
 
@@ -942,12 +1042,13 @@ footer.footer {
           order: 1;
         }
      .doodle-text-module {
-        font-family:$opensans;
+        font-family: $lato;
         text-align: center;
         color:white;
         margin-top: 10em;
 
         h2 {
+          font-family:$opensans;
           font-size: 8em;
           text-transform: uppercase;
         }
@@ -1131,10 +1232,10 @@ footer.footer {
     text-transform: uppercase;
     top:50%;
     border-bottom: 5px solid white;
+    font-family: $opensans;
     
   }
   h2, p {
-    font-family: $opensans;
     color:white;
     left:50%;
     position:absolute;
@@ -1144,6 +1245,9 @@ footer.footer {
 
   p {
     top:70%;
+    font-family: $lato;
+    font-size:1.5em;
+    margin-top:1em;
 
   }
 }

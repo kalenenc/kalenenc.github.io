@@ -130,7 +130,7 @@ layout: default
 				</div>
 			</div>
 			<div class="col-1-2">
-				
+				<div class="module">
 					<div class="blog">
 						<ul>
   							{% for post in site.posts limit: 1 %}
@@ -143,7 +143,7 @@ layout: default
       		<!-- {{ post.content | strip_html | truncatewords:75}} -->
       							</p>
       				</div>
-      
+      			</div>
     						</li>
   							{% endfor %}
 						</ul>
@@ -170,8 +170,11 @@ layout: default
 <section class="cta-section">
 	<div class="grid">
 		<div class="col-1-2">
-				<a class="cta" href="{{site.url}}/contact"><h2>CONTACT ME</h2></a>
-				<a class="cta" href="{{site.url}}/contact"><h2>HIRE ME</h2></a>
+			<div class="module">
+				<h2><a class="cta" href="{{site.url}}/contact">CONTACT ME</a></h2>
+				<h2><a class="cta" href="{{site.url}}/contact">HIRE ME</a></h2>
+			</div>
+				
 			</div>
 		</div>
 	</div>

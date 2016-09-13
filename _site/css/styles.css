@@ -22,7 +22,7 @@ h1 a {
   .header h1 {
     font-family: "Sacramento", cursive;
     color: #F5ABAB;
-    font-size: 3em;
+    font-size: 4em;
     margin: 0;
     padding: 20px; }
   .header ul {
@@ -48,8 +48,8 @@ h1 a {
     .header svg.bee-jump {
       animation: bounce 1.5s 1s ease-in-out; }
   .header p {
-    padding-top: 20px;
-    font-size: 1.2em; }
+    padding: 30px;
+    font-size: 1.6em; }
 
 .nav-icon {
   text-align: left;
@@ -102,7 +102,7 @@ h1 a {
     nav ul li a {
       display: block; } }
 @media only screen and (min-width: 900px) {
-  nav ul {
+  header nav ul {
     display: block !important; } }
 footer.footer {
   background: #F5FAF0;
@@ -110,12 +110,15 @@ footer.footer {
   border-top: 1px dashed #F5ABAB; }
   footer.footer .cta-container {
     padding-top: 50px; }
-    footer.footer .cta-container .cta {
-      font-size: 2em; }
-      footer.footer .cta-container .cta h2 {
-        border: none;
-        margin: 0 auto;
-        width: 50%; }
+    footer.footer .cta-container h2 {
+      color: #F5ABAB;
+      font-size: 3em; }
+    footer.footer .cta-container a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out; }
+      footer.footer .cta-container a:hover {
+        color: #95AAA3; }
   footer.footer h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.5em;
@@ -171,6 +174,12 @@ footer.footer {
 @keyframes spin {
   100% {
     transform: rotate(1turn); } }
+@media only screen and (max-width: 900px) {
+  .star {
+    padding: 50px 50px; }
+
+  .module {
+    padding: 20px; } }
 .section2 .grid {
   background: #9185A7; }
   .section2 .grid .computer {
@@ -252,20 +261,25 @@ footer.footer {
 .image-container:hover .thumb {
   transform: translateY(0) translateX(-54%) scale(1); }
 
+@media only screen and (max-width: 900px) {
+  .image-container {
+    width: 100%; } }
 .section4 .grid {
   background: #ddf1f3 url("../photos/waterdrop.svg");
   background-size: 10%; }
+  .section4 .grid h2 {
+    color: #8B9AC4;
+    text-align: center;
+    padding-top: 30px; }
+    .section4 .grid h2 a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; }
+      .section4 .grid h2 a:hover {
+        color: white;
+        text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.47); }
   .section4 .grid .module {
     padding-top: 0 auto; }
-    .section4 .grid .module h2 {
-      color: #8B9AC4; }
-      .section4 .grid .module h2 a {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out; }
-        .section4 .grid .module h2 a:hover {
-          color: white;
-          text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.47); }
 
 .duck-module {
   text-align: right; }
@@ -303,6 +317,38 @@ footer.footer {
     transform: rotate(70deg); }
   100% {
     transform: rotate(80deg); } }
+@keyframes smallMovePencil {
+  0% {
+    transform: rotate(180deg); }
+  20% {
+    transform: rotate(190deg); }
+  30% {
+    transform: rotate(180deg); }
+  40% {
+    transform: rotate(170deg); }
+  50% {
+    transform: rotate(180deg); }
+  60% {
+    transform: rotate(190deg); }
+  70% {
+    transform: rotate(180deg); }
+  80% {
+    transform: rotate(170deg); }
+  100% {
+    transform: rotate(180deg); } }
+@media only screen and (max-width: 900px) {
+  .duck-module {
+    text-align: center; }
+    .duck-module .duck {
+      width: 80%; }
+
+  .pencil-module {
+    text-align: center; }
+    .pencil-module .pencil {
+      margin: 0;
+      transform: rotate(180deg); }
+      .pencil-module .pencil.smallMovePencil {
+        animation: smallMovePencil 1s ease-in-out 0.5s forwards; } }
 .section5 {
   text-align: center;
   display: block;
@@ -320,8 +366,10 @@ footer.footer {
   .section5 .blog {
     width: 100%;
     text-align: left; }
-    .section5 .blog li {
-      margin-top: 30px; }
+    .section5 .blog ul {
+      margin-bottom: 0; }
+      .section5 .blog ul li {
+        margin-top: 30px; }
 
 .section5:after {
   content: "";
@@ -350,25 +398,30 @@ footer.footer {
 .cta-section {
   background: #DDF0C9 url("../photos/greenlines.svg");
   background-size: 10%; }
+  .cta-section .grid .module {
+    padding: 100px; }
+    .cta-section .grid .module h2 {
+      color: #F5ABAB;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 4em; }
+      .cta-section .grid .module h2:first-of-type {
+        padding-bottom: 100px; }
+      .cta-section .grid .module h2 a {
+        text-decoration: none;
+        color: inherit;
+        border: 4px solid #F5ABAB;
+        padding: 20px;
+        background: #fffafa;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out; }
+        .cta-section .grid .module h2 a:hover {
+          color: #fffafa;
+          background: #F5ABAB;
+          border-color: #fffafa; }
 
-.cta {
-  font-family: "Open Sans Condensed", sans-serif;
-  text-decoration: none;
-  color: #F5ABAB;
-  text-align: center;
-  font-size: 9em; }
-  .cta h2 {
-    border: 5px solid #F5ABAB;
-    margin: auto;
-    width: 80%;
-    padding: 0;
-    transition: all 0.3s ease-in-out; }
-    .cta h2:last-child {
-      margin: 100px auto; }
-    .cta h2:hover {
-      color: #95AAA3;
-      border: 5px solid #95AAA3; }
-
+@media only screen and (max-width: 900px) {
+  .cta-section .grid .module {
+    padding: 100px 0; } }
 .section7 {
   margin: 100px auto;
   font-family: "Open Sans Condensed", sans-serif;
@@ -382,14 +435,15 @@ footer.footer {
 .about-section1, .about-section2, .about-section3 {
   text-align: center;
   color: white;
-  font-family: "Open Sans Condensed", sans-serif; }
+  font-family: "Lato", sans-serif; }
   .about-section1 h2, .about-section2 h2, .about-section3 h2 {
+    font-family: "Open Sans Condensed", sans-serif;
     font-weight: 800;
     font-size: 15vh;
     margin-top: 1.3em;
     margin-bottom: 0.3em; }
   .about-section1 p, .about-section2 p, .about-section3 p {
-    font-size: 2em;
+    font-size: 1.6em;
     padding: 0 20px; }
   .about-section1 [class*='col-1'], .about-section2 [class*='col-1'], .about-section3 [class*='col-1'] {
     padding-right: 0; }
@@ -448,7 +502,7 @@ footer.footer {
     margin-bottom: 150px; }
     .blog ul li {
       margin-top: 150px;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "Lato", sans-serif;
       color: #F5ABAB; }
       .blog ul li .date {
         color: #95AAA3;
@@ -470,7 +524,7 @@ footer.footer {
 .post {
   width: 60%;
   margin: 8em auto;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 30px;
   letter-spacing: 0.2px; }
   .post h2 {
@@ -488,10 +542,11 @@ footer.footer {
 
 .text-module {
   color: white;
-  font-family: "Open Sans Condensed", sans-serif; }
+  font-family: "Lato", sans-serif; }
   .text-module h2 {
     font-size: 10em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif; }
   .text-module p {
     margin-top: 20px;
     font-size: 2em; }
@@ -500,7 +555,7 @@ footer.footer {
     color: #276565; }
 
 .form-module {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: left;
   background: #ffd2b9;
   font-size: 1.5em; }
@@ -517,7 +572,7 @@ footer.footer {
     box-shadow: none;
     font-size: 15px;
     box-shadow: none;
-    font-family: "Open Sans Condensed", sans-serif; }
+    font-family: "Lato", sans-serif; }
   .form-module input[type="text"], .form-module input[type="email"] {
     height: 40px; }
   .form-module textarea {
@@ -541,7 +596,7 @@ label {
   font-size: 1.5em; }
 
 .hire {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: white; }
   .hire .grid {
@@ -554,13 +609,13 @@ label {
       text-align: center; }
       .hire .grid h2:first-of-type {
         font-style: italic; }
-    .hire .grid ul {
+    .hire .grid ul.job-info {
       text-align: left;
       margin-left: 100px; }
-      .hire .grid ul li {
+      .hire .grid ul.job-info li {
         font-size: 1.3em;
         line-height: 130%; }
-        .hire .grid ul li:last-of-type {
+        .hire .grid ul.job-info li:last-of-type {
           margin-top: 20px; }
     .hire .grid p {
       margin-top: 50px;
@@ -569,6 +624,9 @@ label {
       color: #FFCDA4;
       text-decoration: none; }
 
+@media only screen and (max-width: 900px) {
+  .hire .grid ul.job-info {
+    margin-left: 40px; } }
 .flexbox {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -589,11 +647,12 @@ label {
   background: #276565;
   order: 1; }
 .doodles-section .flexbox .doodle-text-module {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: white;
   margin-top: 10em; }
   .doodles-section .flexbox .doodle-text-module h2 {
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 8em;
     text-transform: uppercase; }
   .doodles-section .flexbox .doodle-text-module p {
@@ -730,16 +789,19 @@ label {
     font-size: 15vh;
     text-transform: uppercase;
     top: 50%;
-    border-bottom: 5px solid white; }
+    border-bottom: 5px solid white;
+    font-family: "Open Sans Condensed", sans-serif; }
   .port1 h2, .port1 p, .port2 h2, .port2 p, .port3 h2, .port3 p, .port4 h2, .port4 p {
-    font-family: "Open Sans Condensed", sans-serif;
     color: white;
     left: 50%;
     position: absolute;
     transform: translateY(-50%) translateX(-50%);
     text-align: center; }
   .port1 p, .port2 p, .port3 p, .port4 p {
-    top: 70%; }
+    top: 70%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    margin-top: 1em; }
 
 .port5 {
   margin-top: 100px;
