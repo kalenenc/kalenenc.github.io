@@ -39,49 +39,48 @@ h1 a {
         padding: 10px;
         transition: all 0.5s ease-in-out; }
         .header ul li a:hover {
-          cursor: pointer;
-          color: #F5ABAB;
-          background: rgba(221, 240, 201, 0.3);
-          border-radius: 50%; }
+          color: #475a54; }
   .header svg {
     width: 40%; }
     .header svg.bee-jump {
-      animation: bounce 1.5s 1s ease-in-out; }
+      animation: bounce 1.5s 2s ease-in-out; }
   .header p {
     padding: 30px;
     font-size: 1.6em; }
 
 .nav-icon {
   text-align: left;
-  height: 70px;
-  width: 88px;
+  height: 40px;
+  width: 35px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
   display: none;
   position: absolute;
   cursor: pointer; }
   .nav-icon .span {
     height: 5px;
-    width: 55px;
+    width: 35px;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    border-radius: 1px;
     background: #95AAA3;
     transition: all 0.3s ease-in-out; }
     .nav-icon .span::before, .nav-icon .span::after {
       content: "";
       height: 5px;
       width: 100%;
+      border-radius: 1px;
       background: #95AAA3;
       position: absolute;
       transition: all 0.3s ease-in-out; }
     .nav-icon .span::before {
-      top: 20px; }
+      top: 10px; }
     .nav-icon .span::after {
-      top: -20px; }
+      top: -10px; }
   .nav-icon.active .span::before {
     top: 0;
     transform: rotate(-45deg); }
@@ -495,6 +494,9 @@ footer.footer {
     .about-section4 .banner-container h2 {
       padding-right: 200px; }
 
+@media only screen and (max-height: 900px) {
+  .about-section1 .module, .about-section2 .module, .about-section3 .module {
+    padding: 100px 0px; } }
 .blog {
   width: 50%;
   margin: 0 auto; }
@@ -540,6 +542,12 @@ footer.footer {
     .post p:first-of-type {
       padding-top: 30px; }
 
+@media only screen and (max-width: 900px) {
+  .blog {
+    width: 90%; }
+
+  .post {
+    width: 90%; } }
 .text-module {
   color: white;
   font-family: "Lato", sans-serif; }
@@ -626,7 +634,13 @@ label {
 
 @media only screen and (max-width: 900px) {
   .hire .grid ul.job-info {
-    margin-left: 40px; } }
+    margin-left: 40px; }
+
+  .text-module {
+    padding: 100px 5px; }
+
+  .form-module form {
+    width: 90%; } }
 .flexbox {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -639,6 +653,15 @@ label {
     background: #ffd2b9;
     order: 1; }
 
+@media only screen and (max-width: 900px) {
+  .flexbox {
+    display: block; }
+
+  .about-section1 h2, .about-section2 h2, .about-section3 h2 {
+    margin: 0;
+    padding-top: 50px; }
+  .about-section1 p, .about-section2 p, .about-section3 p {
+    padding: 50px 10px; } }
 .doodles-section .flexbox [class*='col-1']:nth-child(1) {
   padding: 30px;
   background: #276565;
@@ -668,7 +691,7 @@ label {
     right: -900px;
     overflow: hidden; }
     .doodles-section .flexbox .me-module .doodle-me.move-me {
-      animation: moveMe 1s ease-in-out forwards; }
+      animation: moveMe 1s ease-in-out 1s forwards; }
 
 .desc {
   font-family: "Open Sans Condensed", sans-serif;
@@ -707,6 +730,11 @@ label {
   .doodles-section4 .col-1-2:first-of-type {
     background: #FFA4A4; }
 
+@media only screen and (max-width: 900px) {
+  .doodles-section .flexbox .doodle-text-module h2 {
+    font-size: 5.5em; }
+  .doodles-section .flexbox .doodle-text-module p {
+    font-size: 1.6em; } }
 .port {
   background: rgba(84, 85, 92, 0.5);
   z-index: -2; }
