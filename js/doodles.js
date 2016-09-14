@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 
 var $animation_elements = $(".doodle-me ");
 var $window = $(window);
@@ -26,3 +28,6 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+
+});
