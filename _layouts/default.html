@@ -35,13 +35,12 @@
 
 <!-- jQuery -->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-<!-- Link to nav JS -->
-<script src="{{site.url}}/../_js/nav.js" type="text/javascript"></script>
-<script src="{{site.url}}/../_js/doodles.js" type="text/javascript"></script>
 
+<!-- Javascript -->
 <script type="text/javascript">
-	
-	
+
+// Document ready
+
 $(document).ready(function(){
 
 
@@ -56,53 +55,8 @@ $(".nav-icon").on("click", function(){
 	$('nav ul').slideToggle();
 });
 
-// Function Calls
 
-$(function(){
-	// beeJump();
-  // setInterval(function(){ scrollTada(); }, 5000);
-  // setInterval(function(){ beeJump(); }, 5000);
-   // setInterval(function(){ movePencil(); }, 3000);
-    // setInterval(callTada, 4000);
-
-});
-
-
-
-
-// Defining Functions
-
-// function beeJump() {
-//   $(".header svg").toggleClass("bee-jump");
-// }
-
-// function callTada() {
-// 		$(".section2 i").toggleClass("tada")
-// 		// .siblings().removeClass("tada");
-// }
-
-// function scrollTada() {
-//   $(".scroll").toggleClass("tada");
-// }
-
-function movePencil() {
-	$(".pencil").toggleClass("movePencil");
-}
-
-function smallMovePencil() {
-  $(".pencil").toggleClass("smallMovePencil");
-}
-
-// $(window).scroll(function() {
-//    var hT = $('.scroll-to').offset().top,
-//        hH = $('.scroll-to').outerHeight(),
-//        wH = $(window).height(),
-//        wS = $(this).scrollTop();
-//    if (wS > (hT+hH-wH)){
-//        callTada();
-//    }
-// });
-
+// Animations
 
 
 var $animation_elements = $(".moving-icons ");
@@ -251,16 +205,17 @@ function check_if_scroll_in_view() {
 $window.on('scroll resize', check_if_scroll_in_view);
 $window.trigger('scroll');
 
-var $animation_elements = $(".doodle-me ");
+// Move me animation
+
+var $animated_me = $(".doodle-me ");
 var $window = $(window);
 
-
-function check_if_in_view() {
+function check_if_me_in_view() {
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
 
-  $.each($animation_elements, function() {
+  $.each($animated_me, function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;
@@ -276,10 +231,8 @@ function check_if_in_view() {
   });
 }
 
-$window.on('scroll resize', check_if_in_view);
+$window.on('scroll resize', check_if_me_in_view);
 $window.trigger('scroll');
-
-
 
 });
 
