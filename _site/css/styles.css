@@ -481,6 +481,10 @@ footer.footer {
   content: "";
   background: #DDF0C9 url(../photos/words.jpg);
   opacity: 0.04;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=04)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
   top: 0;
   bottom: 0;
   left: 0;
@@ -590,6 +594,10 @@ footer.footer {
     content: "";
     background: #F5FAF0 url("../photos/bee.svg") no-repeat fixed right;
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -872,6 +880,10 @@ label {
 .port:after {
   content: "";
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -889,6 +901,10 @@ label {
   content: "";
   background: url("http://127.0.0.1:4000//../photos/yorkie.jpg") no-repeat fixed center;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -904,6 +920,10 @@ label {
   content: "";
   background: url("http://127.0.0.1:4000//../photos/sunset-hair.jpg") no-repeat fixed center;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -919,6 +939,10 @@ label {
   content: "";
   background: url("http://127.0.0.1:4000//../photos/tan-people.png") no-repeat fixed center;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -934,6 +958,10 @@ label {
   content: "";
   background: url("http://127.0.0.1:4000//../photos/js-hangman.svg") no-repeat fixed center;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;

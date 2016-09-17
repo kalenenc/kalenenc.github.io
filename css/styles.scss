@@ -742,6 +742,10 @@ footer.footer {
   content: "";
   background:$lightgreen url(../photos/words.jpg);
   opacity: 0.04;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=04)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
   top: 0;
   bottom: 0;
   left: 0;
@@ -915,6 +919,10 @@ footer.footer {
     content: "";
     background: $lightestgreen url("../photos/bee.svg") no-repeat fixed right;
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -1329,6 +1337,10 @@ footer.footer {
 .port:after {
   content:"";
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1351,6 +1363,10 @@ footer.footer {
   content: "";
   background: url("{{site.url}}/../photos/yorkie.jpg") no-repeat fixed center;
   opacity: 0.3;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1369,6 +1385,10 @@ footer.footer {
   content: "";
   background: url("{{site.url}}/../photos/sunset-hair.jpg") no-repeat fixed center;
   opacity: 0.3;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1386,6 +1406,10 @@ footer.footer {
   content: "";
   background: url("{{site.url}}/../photos/tan-people.png") no-repeat fixed center;
   opacity: 0.3;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1404,6 +1428,10 @@ footer.footer {
   content: "";
   background: url("{{site.url}}/../photos/js-hangman.svg") no-repeat fixed center;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
