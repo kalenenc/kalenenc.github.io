@@ -17,7 +17,7 @@ h1 a {
 .header {
   text-align: center;
   background: #F5FAF0;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   border-bottom: 1px dashed #F5ABAB; }
   .header h1 {
     font-family: "Sacramento", cursive;
@@ -31,7 +31,7 @@ h1 a {
       display: inline;
       font-family: "Open Sans Condensed", sans-serif;
       list-style: none;
-      font-size: 1.4em;
+      font-size: 1.6em;
       color: #95AAA3; }
       .header ul li a {
         text-decoration: none;
@@ -42,14 +42,17 @@ h1 a {
         .header ul li a:hover {
           color: #475a54; }
   .header svg {
-    width: 40%; }
+    width: 35%; }
     .header svg.bee-jump {
       -webkit-animation: bounce 1.5s 2s ease-in-out;
       animation: bounce 1.5s 2s ease-in-out; }
   .header p {
-    padding: 30px;
-    font-size: 1.6em; }
+    padding: 30px 30px 0 30px;
+    font-size: 1.4em; }
 
+@media only screen and (max-width: 650px) {
+  .header svg {
+    width: 80%; } }
 .nav-icon {
   text-align: left;
   height: 40px;
@@ -544,6 +547,9 @@ footer.footer {
     transform: rotate(50deg);
     margin-top: 2em; }
 
+@media only screen and (max-width: 650px) {
+  .section7 .bee {
+    width: 60%; } }
 .about-section1, .about-section2, .about-section3 {
   text-align: center;
   color: white;
@@ -556,6 +562,7 @@ footer.footer {
     margin-bottom: 0.3em; }
   .about-section1 p, .about-section2 p, .about-section3 p {
     font-size: 1.6em;
+    line-height: 30px;
     padding: 0 20px; }
   .about-section1 [class*='col-1'], .about-section2 [class*='col-1'], .about-section3 [class*='col-1'] {
     padding-right: 0; }

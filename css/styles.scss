@@ -68,7 +68,7 @@ h1 {
 .header {
   text-align: center;
   background: $lightestgreen;
-  padding-bottom:15px;
+  padding-bottom:30px;
   border-bottom: 1px dashed $pink;
   h1 {
     font-family: $sacramento;
@@ -85,7 +85,7 @@ h1 {
       display: inline;
       font-family: $opensans;
       list-style: none;
-      font-size: 1.4em;
+      font-size: 1.6em;
       color: $grey;
         
       a {
@@ -102,7 +102,7 @@ h1 {
     }
   }
   svg {
-    width:40%;
+    width:35%;
     &.bee-jump {
       -webkit-animation: bounce 1.5s 2s ease-in-out;
       animation: bounce 1.5s 2s ease-in-out;
@@ -110,10 +110,18 @@ h1 {
 
   }
   p {
-    padding:30px;
-    font-size:1.6em;
+    padding:30px 30px 0 30px;
+    font-size:1.4em;
   }
  
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    svg {
+      width:80%;
+    }
+  }
 }
 
 
@@ -849,6 +857,14 @@ footer.footer {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .section7 {
+    .bee {
+      width: 60%;
+    }
+  }
+}
+
 
 
 
@@ -868,6 +884,7 @@ footer.footer {
   }
   p {
     font-size: 1.6em;
+    line-height: 30px;
     padding:0 20px;
   }
 
