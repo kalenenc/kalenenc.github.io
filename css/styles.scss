@@ -992,7 +992,7 @@ footer.footer {
       .date {
         color: $grey;
         margin-bottom: 20px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right:3.3em;
       } 
       a {
@@ -1019,9 +1019,16 @@ footer.footer {
   font-family: $lato;
   line-height: 30px;
   letter-spacing: 0.2px;
+  .date {
+    color: $grey;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    margin-right:3.3em;
+    text-align: left;
+  }
   h2 {
     font-size:4em;
-    text-align:center;
+    text-align:left;
     margin-bottom:30px;
     font-family: $sacramento;
     color: $pink;

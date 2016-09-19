@@ -640,7 +640,7 @@ footer.footer {
       .blog ul li .date {
         color: #95AAA3;
         margin-bottom: 20px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right: 3.3em; }
       .blog ul li a {
         text-decoration: none;
@@ -660,9 +660,15 @@ footer.footer {
   font-family: "Lato", sans-serif;
   line-height: 30px;
   letter-spacing: 0.2px; }
+  .post .date {
+    color: #95AAA3;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    margin-right: 3.3em;
+    text-align: left; }
   .post h2 {
     font-size: 4em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     font-family: "Sacramento", cursive;
     color: #F5ABAB; }
