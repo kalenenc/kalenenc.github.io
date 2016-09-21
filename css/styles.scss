@@ -65,11 +65,18 @@ h1 {
   }
 }
 
+// .header-container {
+//   height: 100vh;
+//   backgroun
+// }
+
 .header {
   text-align: center;
   background: $lightestgreen;
-  padding-bottom:30px;
+  
+   padding-bottom:30px;
   border-bottom: 1px dashed $pink;
+
   h1 {
     font-family: $sacramento;
     color: $pink;
@@ -98,11 +105,13 @@ h1 {
         &:hover {
           color: #475a54;
         }
+        
       }
     }
   }
   svg {
-    width:35%;
+    // width:35%;
+    height: 50vh;
     &.bee-jump {
       -webkit-animation: bounce 1.5s 2s ease-in-out;
       animation: bounce 1.5s 2s ease-in-out;
@@ -116,13 +125,13 @@ h1 {
  
 }
 
-@media only screen and (max-width: 650px) {
-  .header {
-    svg {
-      width:80%;
-    }
-  }
-}
+// @media only screen and (max-width: 650px) {
+//   .header {
+//     svg {
+//       width:80%;
+//     }
+//   }
+// }
 
 
 
@@ -1515,58 +1524,64 @@ footer.footer {
 
 // ---- Grid ----
 
-// .grid {
-//   width: 100%;
-//   // padding-left: $gutter;
-//   overflow: hidden;
-// }
-
-// [class*='col-1'] {
-//   float:left;
-//   // padding-right: $gutter;
-// }
-
-// .col-1-8 {
-//   width: 12.5%;
-// }
-
-// .col-1-4 {
-//   width: 25%;
-// }
-
-// .col-1-3 {
-//   width: 33.33%
-// }
-
-// .col-1-2 {
-//   width: 50%;
-// }
-
-// .col-2-3 {
-//   width: 66.66%;
-// }
-
-// .col-3-4 {
-//   width: 75%;
-// }
-
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 100%;
+  // padding-left: $gutter;
+  overflow: hidden;
+}
 
-.col-1-2, .col-1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+[class*='col-1'] {
+  float:left;
+  // padding-right: $gutter;
+}
 
+.col-1-8 {
+  width: 12.5%;
+}
 
+.col-1-4 {
+  width: 25%;
+}
+
+.col-1-3 {
+  width: 33.33%
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.col-3-4 {
+  width: 75%;
+}
 
 @media only screen and (max-width: 900px) {
-  .grid {
-    display:block;
+  .col-1-2 {
+    width: 100%;
   }
 }
+
+// .grid {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex; }
+
+// .col-1-2, .col-1 {
+//   -webkit-box-flex: 1;
+//       -ms-flex: 1;
+//           flex: 1; }
+
+
+
+// @media only screen and (max-width: 900px) {
+//   .grid {
+//     display:block;
+//   }
+// }
 
 
 
