@@ -42,7 +42,7 @@ h1 a {
         .header ul li a:hover {
           color: #475a54; }
   .header svg {
-    width: 35%; }
+    width: 20%; }
     .header svg.bee-jump {
       -webkit-animation: bounce 1.5s 2s ease-in-out;
       animation: bounce 1.5s 2s ease-in-out; }
@@ -50,7 +50,10 @@ h1 a {
     padding: 30px 30px 0 30px;
     font-size: 1.4em; }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
+  .header svg {
+    width: 40%; } }
+@media only screen and (max-width: 550px) {
   .header svg {
     width: 80%; } }
 .nav-icon {
