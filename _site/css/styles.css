@@ -681,7 +681,8 @@ footer.footer {
     text-align: left;
     margin-bottom: 30px;
     font-family: "Sacramento", cursive;
-    color: #F5ABAB; }
+    color: #F5ABAB;
+    line-height: 0.9em; }
   .post p {
     color: #5a756c;
     font-size: 1.3em;
