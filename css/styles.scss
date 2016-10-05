@@ -991,6 +991,14 @@ footer.footer {
 
 // ---- Blog ----
 
+.indent {
+    padding-left: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .blog {
   width:50%;
   margin: 0 auto;
@@ -1047,8 +1055,9 @@ footer.footer {
   }
   p {
     color:#5a756c;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom:30px;
+    line-height: 1.3em;
     &:first-of-type {
       padding-top: 30px;
     }
@@ -1056,12 +1065,32 @@ footer.footer {
 }
 
 @media only screen and (max-width: 900px) {
+
+
   .blog {
     width: 90%;
+     font-size: 1.2em;
+    p {
+      font-size: 1.1em;
+    }
+    ul {
+      li {
+        .date {
+          font-size: 1.1em;
+        }
+        a {
+          font-size: 2em;
+        }
+      }
+    }
   }
 
   .post {
-    width: 90%
+    width: 90%;
+    p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
   }
 }
 
@@ -1194,6 +1223,8 @@ footer.footer {
   .form-module  form {
     width: 90%;
   }
+
+
  
 }
 

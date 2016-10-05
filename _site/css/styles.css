@@ -632,6 +632,12 @@ footer.footer {
 @media only screen and (max-height: 900px) {
   .about-section1 .module, .about-section2 .module, .about-section3 .module {
     padding: 100px 0px; } }
+.indent {
+  padding-left: 20px; }
+
+.italic {
+  font-style: italic; }
+
 .blog {
   width: 50%;
   margin: 0 auto; }
@@ -678,17 +684,28 @@ footer.footer {
     color: #F5ABAB; }
   .post p {
     color: #5a756c;
-    font-size: 1.5em;
-    margin-bottom: 30px; }
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.3em; }
     .post p:first-of-type {
       padding-top: 30px; }
 
 @media only screen and (max-width: 900px) {
   .blog {
-    width: 90%; }
+    width: 90%;
+    font-size: 1.2em; }
+    .blog p {
+      font-size: 1.1em; }
+    .blog ul li .date {
+      font-size: 1.1em; }
+    .blog ul li a {
+      font-size: 2em; }
 
   .post {
-    width: 90%; } }
+    width: 90%; }
+    .post p {
+      font-size: 1.2em;
+      line-height: 1.2em; } }
 .text-module {
   color: white;
   font-family: "Lato", sans-serif; }
