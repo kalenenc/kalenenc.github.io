@@ -1,8 +1,8 @@
 name: "My Website"
 description: "My Website"
 
-#url: "http://127.0.0.1:4000/"
-url: "http://kalenenc.github.io"
+url: "http://127.0.0.1:4000/"
+#url: "http://kalenenc.github.io"
 
 #paginate: 10
 
