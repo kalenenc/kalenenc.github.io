@@ -691,6 +691,10 @@ footer.footer {
     .post p:first-of-type {
       padding-top: 30px; }
 
+.underline-bold {
+  font-weight: bold;
+  text-decoration: underline; }
+
 @media only screen and (max-width: 900px) {
   .blog {
     width: 90%;
