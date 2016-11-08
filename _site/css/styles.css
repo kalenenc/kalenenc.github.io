@@ -938,7 +938,7 @@ label {
 
 .dog-website:after {
   content: "";
-  background: url("http://127.0.0.1:4000//../photos/yorkie.jpg") no-repeat fixed center;
+  background: url("http://localhost:4000/../photos/yorkie.jpg") no-repeat fixed center;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
@@ -957,7 +957,7 @@ label {
 
 .music-website:after {
   content: "";
-  background: url("http://127.0.0.1:4000//../photos/sunset-hair.jpg") no-repeat fixed center;
+  background: url("http://localhost:4000/../photos/sunset-hair.jpg") no-repeat fixed center;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
@@ -976,7 +976,7 @@ label {
 
 .artist-website:after {
   content: "";
-  background: url("http://127.0.0.1:4000//../photos/tan-people.png") no-repeat fixed center;
+  background: url("http://localhost:4000/../photos/tan-people.png") no-repeat fixed center;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
@@ -995,7 +995,7 @@ label {
 
 .js-game:after {
   content: "";
-  background: url("http://127.0.0.1:4000//../photos/js-hangman.svg") no-repeat fixed center;
+  background: url("http://localhost:4000/../photos/js-hangman.svg") no-repeat fixed center;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
