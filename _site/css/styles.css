@@ -916,6 +916,14 @@ label {
   background: rgba(84, 85, 92, 0.5);
   z-index: -2; }
 
+.port5 h2.contstruction-title {
+  color: #F5ABAB; }
+.port5 p.construction {
+  color: #95AAA3; }
+  .port5 p.construction a {
+    color: #F5ABAB;
+    text-decoration: none; }
+
 .port:after {
   content: "";
   opacity: 0.3;

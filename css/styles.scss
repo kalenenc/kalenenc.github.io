@@ -1409,6 +1409,21 @@ footer.footer {
 
 }
 
+.port5 {
+  h2.contstruction-title {
+    color: $pink;
+  }
+
+  p.construction {
+    color: $grey;
+    a {
+    color: $pink;
+    text-decoration: none;
+    }
+  }
+  
+}
+
 .port:after {
   content:"";
   opacity: 0.3;
