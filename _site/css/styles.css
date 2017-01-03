@@ -983,9 +983,6 @@ label {
   font-size: 2em;
   padding: 10px; }
 
-p.port-description {
-  text-align: left; }
-
 .port-image {
   margin: auto;
   transition: opacity 0.2s ease-in-out; }
