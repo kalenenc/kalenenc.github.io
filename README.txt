@@ -1,1 +1,1 @@
-A website for me!
+Oh gee! My very own own website! Coded from scratch and everything! Powered by Jekyll, hosted in Github, made with ♡ by yours, truly
