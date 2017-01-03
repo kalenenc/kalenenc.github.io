@@ -918,7 +918,8 @@ label {
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 auto;
   width: 90%;
-  text-align: center; }
+  text-align: center;
+  color: #5a756c; }
   .port h1 {
     font-size: 4em;
     padding: 10px;
@@ -928,7 +929,8 @@ label {
     padding: 49px;
     margin-bottom: 17px; }
   .port p {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin: 20px; }
   .port a {
     color: #F5ABAB;
     font-weight: bold; }
