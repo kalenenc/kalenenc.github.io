@@ -1403,178 +1403,505 @@ footer.footer {
 // --- Portfolio ----
 
 .port {
-    background: rgba(84,85,92,0.5);
-    z-index: -2;
-    
 
-}
-
-.port5 {
-  h2.contstruction-title {
-    color: $pink;
-  }
-
-  p.construction {
-    color: $grey;
-    a {
-    color: $pink;
-    text-decoration: none;
-    }
-  }
+  font-family: $opensans;
+  margin: 0 auto;
+  width:90%;
+  text-align: center;
   
-}
-
-.port:after {
-  content:"";
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-}
-
-.dog-website { 
-  
-  height:50em;
-  position:relative;
-
-  a {
-    z-index: 1;
+  h1 {
+    font-size: 4em;
+    padding: 10px;
   }
-}
 
-.dog-website:after {
-  content: "";
-  background: url("{{site.url}}/../photos/yorkie.jpg") no-repeat fixed center;
-  opacity: 0.3;
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-}
-
-.music-website {
-  
-  height:50em;
-  position:relative;
-}
-
-.music-website:after {
-  content: "";
-  background: url("{{site.url}}/../photos/sunset-hair.jpg") no-repeat fixed center;
-  opacity: 0.3;
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-}
-
-.artist-website {
-  position:relative;
-  height:50em;
-}
-
-.artist-website:after {
-  content: "";
-  background: url("{{site.url}}/../photos/tan-people.png") no-repeat fixed center;
-  opacity: 0.3;
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-
-}
-
-.js-game {
-  position: relative;
-  height:50em;
-}
-
-.js-game:after {
-  content: "";
-  background: url("{{site.url}}/../photos/js-hangman.svg") no-repeat fixed center;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-
-}
-
-.port1, .port2, .port3, .port4, {
-  position:relative;
-  h2 {
-    font-size:15vh;
-    text-transform: uppercase;
-    top:50%;
-    border-bottom: 5px solid white;
-    font-family: $opensans;
-    
-  }
-  h2, p {
-    color:white;
-    left:50%;
-    position:absolute;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
-    text-align:center;
+  p.port-desc {
+    font-size: 1.3em;
+    padding: 49px;
+    margin-bottom: 17px;
   }
 
   p {
-    top:70%;
-    font-family: $lato;
-    font-size:1.5em;
-    margin-top:1em;
+    font-size: 1.2em;
+  }
 
+  a {
+    color: $pink;
+    font-weight: bold;
+  }
+  .academy-projects {
+    h1 {
+      font-size: 3em;
+      color: $pink;
+    }
+    .academy-project-item {
+      display:inline-block;
+      width: 30%;
+      margin: 10px;
+    }
+  }
+
+  .websites {
+    h1 {
+      font-size: 3em;
+      color: $pink;
+    }
+    .website-item {
+      display:inline-block;
+      width: 30%;
+      margin: 10px;
+    }
+  }
+
+  .side-projects {
+    h1 {
+      font-size: 3em;
+      color: $pink;
+    }
+    .side-item{
+      display:inline-block;
+      width: 30%;
+      margin: 10px;
+    }
+  }
+
+  .css-animations{
+    h1 {
+      font-size: 3em;
+      color: $pink;
+    }
+    .css-animation-item {
+      display:inline-block;
+      width: 30%;
+      margin: 20px;
+    }
   }
 }
 
-.port5 {
-  margin-top:100px;
-  text-align: center;
-  h2 {
-    font-size:3em;
-    font-family: $sacramento;
-    color:$grey;
-  }
-
-  p { 
-    margin: 100px auto;
-    font-family: $opensans;
-    font-size:1.5em;
-    color:$pink;
+@media only screen and (max-width: 1125px) {
+  
+  .port {
+    .side-projects {
+      .side-item {
+        width: 40%;
+      }
+    }
+    .css-animations {
+      .css-animation-item {
+        width: 40%;
+      }
+    }
+    
+    .websites {
+      .website-item {
+        width: 40%;
+      }
+    }
+    
+    .academy-projects {
+      .academy-project-item {
+        width: 40%;
+      }
+    }
   }
 }
+
+@media only screen and (max-width: 870px) {
+  .port { 
+
+   .side-projects {
+      .side-item {
+        width: 95%;
+      }
+    }
+    .css-animations {
+      .css-animation-item {
+        width: 95%;
+      }
+    }
+    
+    .websites {
+      .website-item {
+        width: 95%;
+      }
+    }
+    
+    .academy-projects {
+      .academy-project-item {
+        width: 95%;
+      }
+    }
+  }
+}
+
+.port-title {
+  font-size: 2em;
+  padding: 10px;
+}
+
+.port-description {
+
+}
+
+
+
+
+.port-image {
+  margin: auto;
+}
+
+
+.replay-image {
+  background-image: url('{{site.url}}/../photos/replayfx.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 135%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.calc-image {
+  background-image: url('{{site.url}}/../photos/calculator.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 114%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.game {
+  background-image: url('{{site.url}}/../photos/gameoflife.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 167%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+
+.trello {
+  background-image: url('{{site.url}}/../photos/trello.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 165%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+
+
+.roman {
+  background-image: url('{{site.url}}/../photos/romannumerals.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 202%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.buzz {
+  background-image: url('{{site.url}}/../photos/buzzfeed.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 135%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.wikipedia {
+  background-image: url('{{site.url}}/../photos/wikipedia.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 175%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.weather {
+  background-image: url('{{site.url}}/../photos/weather.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 165%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.quotegenerator {
+  background-image: url('{{site.url}}/../photos/quotegenerator.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 169%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.toxins{
+  background-image: url('{{site.url}}/../photos/schooltoxins.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 223%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.music-port {
+  background-image: url('{{site.url}}/../photos/music-website.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 209%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.dog-port {
+  background-image: url('{{site.url}}/../photos/dog-website.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 184%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.chelyport {
+  background-image: url('{{site.url}}/../photos/chelychee.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 181%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.dancingflower {
+  background-image: url('{{site.url}}/../photos/dancingflower.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.ghost {
+  background-image: url('{{site.url}}/../photos/ghost.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 160%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+.candycorn {
+  background-image: url('{{site.url}}/../photos/candycorn.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 173%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid $grey;
+}
+
+// .port {
+//     background: rgba(84,85,92,0.5);
+//     z-index: -2;
+    
+
+// }
+
+// .port5 {
+//   h2.contstruction-title {
+//     color: $pink;
+//   }
+
+//   p.construction {
+//     color: $grey;
+//     a {
+//     color: $pink;
+//     text-decoration: none;
+//     }
+//   }
+  
+// }
+
+// .port:after {
+//   content:"";
+//   opacity: 0.3;
+//   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+//   filter: alpha(opacity=30);
+//   -moz-opacity: 0.3;
+//   -khtml-opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1; 
+// }
+
+// .dog-website { 
+  
+//   height:50em;
+//   position:relative;
+
+//   a {
+//     z-index: 1;
+//   }
+// }
+
+// .dog-website:after {
+//   content: "";
+//   background: url("{{site.url}}/../photos/yorkie.jpg") no-repeat fixed center;
+//   opacity: 0.3;
+//    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+//   filter: alpha(opacity=30);
+//   -moz-opacity: 0.3;
+//   -khtml-opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1; 
+// }
+
+// .music-website {
+  
+//   height:50em;
+//   position:relative;
+// }
+
+// .music-website:after {
+//   content: "";
+//   background: url("{{site.url}}/../photos/sunset-hair.jpg") no-repeat fixed center;
+//   opacity: 0.3;
+//    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+//   filter: alpha(opacity=30);
+//   -moz-opacity: 0.3;
+//   -khtml-opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1; 
+// }
+
+// .artist-website {
+//   position:relative;
+//   height:50em;
+// }
+
+// .artist-website:after {
+//   content: "";
+//   background: url("{{site.url}}/../photos/tan-people.png") no-repeat fixed center;
+//   opacity: 0.3;
+//    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+//   filter: alpha(opacity=30);
+//   -moz-opacity: 0.3;
+//   -khtml-opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1; 
+
+// }
+
+// .js-game {
+//   position: relative;
+//   height:50em;
+// }
+
+// .js-game:after {
+//   content: "";
+//   background: url("{{site.url}}/../photos/js-hangman.svg") no-repeat fixed center;
+//   opacity: 0.3;
+//   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+//   filter: alpha(opacity=30);
+//   -moz-opacity: 0.3;
+//   -khtml-opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1; 
+
+// }
+
+// .port1, .port2, .port3, .port4, {
+//   position:relative;
+//   h2 {
+//     font-size:15vh;
+//     text-transform: uppercase;
+//     top:50%;
+//     border-bottom: 5px solid white;
+//     font-family: $opensans;
+    
+//   }
+//   h2, p {
+//     color:white;
+//     left:50%;
+//     position:absolute;
+//     -webkit-transform: translateY(-50%) translateX(-50%);
+//     transform: translateY(-50%) translateX(-50%);
+//     text-align:center;
+//   }
+
+//   p {
+//     top:70%;
+//     font-family: $lato;
+//     font-size:1.5em;
+//     margin-top:1em;
+
+//   }
+// }
+
+// .port5 {
+//   margin-top:100px;
+//   text-align: center;
+//   h2 {
+//     font-size:3em;
+//     font-family: $sacramento;
+//     color:$grey;
+//   }
+
+//   p { 
+//     margin: 100px auto;
+//     font-family: $opensans;
+//     font-size:1.5em;
+//     color:$pink;
+//   }
+// }
 
 
 

@@ -913,142 +913,235 @@ label {
   .doodles-section .flexbox .doodle-text-module p {
     font-size: 1.6em; } }
 .port {
-  background: rgba(84, 85, 92, 0.5);
-  z-index: -2; }
-
-.port5 h2.contstruction-title {
-  color: #F5ABAB; }
-.port5 p.construction {
-  color: #95AAA3; }
-  .port5 p.construction a {
-    color: #F5ABAB;
-    text-decoration: none; }
-
-.port:after {
-  content: "";
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.dog-website {
-  height: 50em;
-  position: relative; }
-  .dog-website a {
-    z-index: 1; }
-
-.dog-website:after {
-  content: "";
-  background: url("http://localhost:4000/../photos/yorkie.jpg") no-repeat fixed center;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.music-website {
-  height: 50em;
-  position: relative; }
-
-.music-website:after {
-  content: "";
-  background: url("http://localhost:4000/../photos/sunset-hair.jpg") no-repeat fixed center;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.artist-website {
-  position: relative;
-  height: 50em; }
-
-.artist-website:after {
-  content: "";
-  background: url("http://localhost:4000/../photos/tan-people.png") no-repeat fixed center;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.js-game {
-  position: relative;
-  height: 50em; }
-
-.js-game:after {
-  content: "";
-  background: url("http://localhost:4000/../photos/js-hangman.svg") no-repeat fixed center;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.port1, .port2, .port3, .port4 {
-  position: relative; }
-  .port1 h2, .port2 h2, .port3 h2, .port4 h2 {
-    font-size: 15vh;
-    text-transform: uppercase;
-    top: 50%;
-    border-bottom: 5px solid white;
-    font-family: "Open Sans Condensed", sans-serif; }
-  .port1 h2, .port1 p, .port2 h2, .port2 p, .port3 h2, .port3 p, .port4 h2, .port4 p {
-    color: white;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
-    text-align: center; }
-  .port1 p, .port2 p, .port3 p, .port4 p {
-    top: 70%;
-    font-family: "Lato", sans-serif;
-    font-size: 1.5em;
-    margin-top: 1em; }
-
-.port5 {
-  margin-top: 100px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 auto;
+  width: 90%;
   text-align: center; }
-  .port5 h2 {
+  .port h1 {
+    font-size: 4em;
+    padding: 10px; }
+  .port p.port-desc {
+    font-size: 1.3em;
+    padding: 49px;
+    margin-bottom: 17px; }
+  .port p {
+    font-size: 1.2em; }
+  .port a {
+    color: #F5ABAB;
+    font-weight: bold; }
+  .port .academy-projects h1 {
     font-size: 3em;
-    font-family: "Sacramento", cursive;
-    color: #95AAA3; }
-  .port5 p {
-    margin: 100px auto;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5em;
     color: #F5ABAB; }
+  .port .academy-projects .academy-project-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px; }
+  .port .websites h1 {
+    font-size: 3em;
+    color: #F5ABAB; }
+  .port .websites .website-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px; }
+  .port .side-projects h1 {
+    font-size: 3em;
+    color: #F5ABAB; }
+  .port .side-projects .side-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px; }
+  .port .css-animations h1 {
+    font-size: 3em;
+    color: #F5ABAB; }
+  .port .css-animations .css-animation-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px; }
+
+@media only screen and (max-width: 1125px) {
+  .port .side-projects .side-item {
+    width: 40%; }
+  .port .css-animations .css-animation-item {
+    width: 40%; }
+  .port .websites .website-item {
+    width: 40%; }
+  .port .academy-projects .academy-project-item {
+    width: 40%; } }
+@media only screen and (max-width: 870px) {
+  .port .side-projects .side-item {
+    width: 95%; }
+  .port .css-animations .css-animation-item {
+    width: 95%; }
+  .port .websites .website-item {
+    width: 95%; }
+  .port .academy-projects .academy-project-item {
+    width: 95%; } }
+.port-title {
+  font-size: 2em;
+  padding: 10px; }
+
+.port-image {
+  margin: auto; }
+
+.replay-image {
+  background-image: url("http://localhost:4000/../photos/replayfx.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 135%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.calc-image {
+  background-image: url("http://localhost:4000/../photos/calculator.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 114%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.game {
+  background-image: url("http://localhost:4000/../photos/gameoflife.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 167%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.trello {
+  background-image: url("http://localhost:4000/../photos/trello.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 165%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.roman {
+  background-image: url("http://localhost:4000/../photos/romannumerals.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 202%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.buzz {
+  background-image: url("http://localhost:4000/../photos/buzzfeed.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 135%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.wikipedia {
+  background-image: url("http://localhost:4000/../photos/wikipedia.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 175%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.weather {
+  background-image: url("http://localhost:4000/../photos/weather.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 165%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.quotegenerator {
+  background-image: url("http://localhost:4000/../photos/quotegenerator.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 169%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.toxins {
+  background-image: url("http://localhost:4000/../photos/schooltoxins.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 223%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.music-port {
+  background-image: url("http://localhost:4000/../photos/music-website.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 209%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.dog-port {
+  background-image: url("http://localhost:4000/../photos/dog-website.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 184%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.chelyport {
+  background-image: url("http://localhost:4000/../photos/chelychee.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 181%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.dancingflower {
+  background-image: url("http://localhost:4000/../photos/dancingflower.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.ghost {
+  background-image: url("http://localhost:4000/../photos/ghost.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 160%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
+
+.candycorn {
+  background-image: url("http://localhost:4000/../photos/candycorn.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 173%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #95AAA3; }
 
 .grid {
   display: -webkit-box;
