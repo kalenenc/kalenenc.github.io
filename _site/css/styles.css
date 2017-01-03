@@ -568,6 +568,8 @@ footer.footer {
     font-size: 1.6em;
     line-height: 30px;
     padding: 0 20px; }
+  .about-section1 a, .about-section2 a, .about-section3 a {
+    color: #95AAA3; }
   .about-section1 [class*='col-1'], .about-section2 [class*='col-1'], .about-section3 [class*='col-1'] {
     padding-right: 0; }
 
@@ -919,7 +921,8 @@ label {
   text-align: center; }
   .port h1 {
     font-size: 4em;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 47px; }
   .port p.port-desc {
     font-size: 1.3em;
     padding: 49px;
@@ -980,8 +983,14 @@ label {
   font-size: 2em;
   padding: 10px; }
 
+p.port-description {
+  text-align: left; }
+
 .port-image {
-  margin: auto; }
+  margin: auto;
+  transition: opacity 0.2s ease-in-out; }
+  .port-image:hover {
+    opacity: 0.7; }
 
 .replay-image {
   background-image: url("http://localhost:4000/../photos/replayfx.png");

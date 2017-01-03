@@ -900,9 +900,15 @@ footer.footer {
     padding:0 20px;
   }
 
+  a {
+    color: $grey;
+  }
+
   [class*='col-1'] {
   padding-right: 0;
   }
+
+
 }
 
 .my-pic, .rainbow-pitt, .flower {
@@ -1412,6 +1418,8 @@ footer.footer {
   h1 {
     font-size: 4em;
     padding: 10px;
+    margin-top: 47px;
+
   }
 
   p.port-desc {
@@ -1538,8 +1546,8 @@ footer.footer {
   padding: 10px;
 }
 
-.port-description {
-
+p.port-description {
+  text-align: left; 
 }
 
 
@@ -1547,6 +1555,10 @@ footer.footer {
 
 .port-image {
   margin: auto;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 
