@@ -1047,6 +1047,9 @@ footer.footer {
   font-family: $lato;
   line-height: 30px;
   letter-spacing: 0.2px;
+  a {
+    color: $pink;
+  }
    h3 {
     font-size: 2em;
     margin-bottom: 30px;
