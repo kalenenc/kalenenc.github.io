@@ -1047,6 +1047,11 @@ footer.footer {
   font-family: $lato;
   line-height: 30px;
   letter-spacing: 0.2px;
+   h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #455751;
+  }
   .date {
     color: $grey;
     margin-bottom: 30px;
@@ -1071,11 +1076,7 @@ footer.footer {
       padding-top: 30px;
     }
   }
-  h3 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #455751;
-  }
+ 
 }
 
 .underline-bold {

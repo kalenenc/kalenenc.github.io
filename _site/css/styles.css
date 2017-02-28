@@ -672,6 +672,10 @@ footer.footer {
   font-family: "Lato", sans-serif;
   line-height: 30px;
   letter-spacing: 0.2px; }
+  .post h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #455751; }
   .post .date {
     color: #95AAA3;
     margin-bottom: 30px;
@@ -692,10 +696,6 @@ footer.footer {
     line-height: 1.3em; }
     .post p:first-of-type {
       padding-top: 30px; }
-  .post h3 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #455751; }
 
 .underline-bold {
   font-weight: bold;
