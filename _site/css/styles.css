@@ -175,7 +175,7 @@ footer.footer {
   .star polygon {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    /* doesn't work as intended in Firefox 
+    /* doesn't work as intended in Firefox
      * % values are taken relative to the SVG, not the element
      * which actually seems to be correct */
     -webkit-transform-origin: 50% 50%;
@@ -521,8 +521,6 @@ footer.footer {
       color: #F5ABAB;
       font-family: "Open Sans Condensed", sans-serif;
       font-size: 4em; }
-      .cta-section .grid .module h2:first-of-type {
-        padding-bottom: 100px; }
       .cta-section .grid .module h2 a {
         text-decoration: none;
         color: inherit;

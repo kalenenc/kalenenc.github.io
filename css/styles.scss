@@ -35,7 +35,7 @@ $blue: #276565;
 
 $ruby: #A94141;
 
-  
+
   // ---------------------------------
 
 // ---- General ----
@@ -51,7 +51,7 @@ $ruby: #A94141;
 body, header.header {
   font-family: $opensans;
   color: $grey;
- 
+
 }
 
 h1 {
@@ -87,18 +87,18 @@ h1 {
       list-style: none;
       font-size: 1.6em;
       color: $grey;
-        
+
       a {
         text-decoration:none;
         color:inherit;
         padding: 10px;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-  
+
         &:hover {
           color: #475a54;
         }
-        
+
       }
     }
   }
@@ -114,7 +114,7 @@ h1 {
     padding:30px 30px 0 30px;
     font-size:1.4em;
   }
- 
+
 }
 
 
@@ -159,7 +159,7 @@ h1 {
     background:$grey;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    
+
     &::before,&::after {
       content: "";
       height:5px;
@@ -206,7 +206,7 @@ h1 {
 
 nav {
   .nav-icon {
-    display:block; 
+    display:block;
   }
   ul {
     display:none;
@@ -229,14 +229,14 @@ nav {
    }
 
   }
-  
+
 
 }
 
 
 
 
-// ---- Footer ---- 
+// ---- Footer ----
 
 footer.footer {
   background: $lightestgreen;
@@ -318,7 +318,7 @@ footer.footer {
         padding:0;
       }
      }
-     
+
 }
 
 .star {
@@ -330,7 +330,7 @@ footer.footer {
   polygon {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-  /* doesn't work as intended in Firefox 
+  /* doesn't work as intended in Firefox
    * % values are taken relative to the SVG, not the element
    * which actually seems to be correct */
    -webkit-transform-origin: 50% 50%;
@@ -347,7 +347,7 @@ footer.footer {
        -webkit-animation-play-state: running;
        animation-play-state:running;
     }
-  } 
+  }
 }
 
 @-webkit-keyframes spin {
@@ -414,7 +414,7 @@ footer.footer {
           font-size:2em;
           // -webkit-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
           // -moz-box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
-          // box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47); 
+          // box-shadow: 9px 20px 41px -15px rgba(0,0,0,0.47);
           -webkit-transition: color 0.3s ease-in-out;
           transition: color 0.3s ease-in-out;
 
@@ -422,12 +422,12 @@ footer.footer {
           &.tada {
             -webkit-animation: tada 1s ease-in-out 1s;
             animation: tada 1s ease-in-out 1s;
-          }   
+          }
           &:hover {
             color:$pink;
           }
         }
-      }  
+      }
     }
 
 // Media queries
@@ -447,7 +447,7 @@ footer.footer {
   text-align: center;
   font-family: $opensans;
   overflow: hidden;
-  
+
   p.click-more {
     font-size:1.5em;
     -webkit-transition: color 0.3s ease-in-out;
@@ -462,9 +462,9 @@ footer.footer {
     color:inherit;
     font-family: $lato;
   }
- 
+
   .h2 {
- 
+
     margin-top:30px;
     color: #54555c;
   }
@@ -476,7 +476,7 @@ footer.footer {
 }
 
 .image-container {
-  
+
 
   width:30%;
   position:relative;
@@ -484,7 +484,7 @@ footer.footer {
   width:33.33%;
   padding-right:20px;
   overflow: hidden;
- 
+
   img {
     width:100%;
     -webkit-box-shadow: 13px 0px 40px -9px rgba(0,0,0,0.32);
@@ -540,10 +540,10 @@ footer.footer {
           &:hover {
             color: white;
             text-shadow: 2px 2px 7px rgba(150, 150, 150, 0.47);
-            
+
           }
-        } 
-      } 
+        }
+      }
     .module {
       padding-top:0 auto;
     }
@@ -579,7 +579,7 @@ footer.footer {
     -webkit-animation: smallMovePencil 1s ease-in-out 0.5s forwards;
     animation: smallMovePencil 1s ease-in-out 0.5s forwards;
   }
-  
+
 }
 
 @-webkit-keyframes movePencil {
@@ -753,7 +753,7 @@ footer.footer {
       margin-top: 30px;
       }
     }
-    
+
   }
 }
 
@@ -792,7 +792,7 @@ footer.footer {
     margin: 50px auto;
     width:50%;
   }
-}  
+}
 
 
 
@@ -804,15 +804,12 @@ footer.footer {
   .grid {
     .module {
       padding: 100px;
-    
+
     h2 {
       color: $pink;
       font-family: $opensans;
       font-size: 4em;
 
-      &:first-of-type {
-        padding-bottom: 100px;
-      }
     a {
       text-decoration: none;
       color:inherit;
@@ -831,10 +828,8 @@ footer.footer {
     }
   }
   }
-  
   }
-  
-} 
+}
 
 
 
@@ -848,9 +843,9 @@ footer.footer {
       padding: 100px 0;
     }
   }
-    
+
   }
- 
+
 }
 
 
@@ -886,7 +881,7 @@ footer.footer {
   text-align:center;
   color:white;
   font-family: $lato;
-  
+
   h2 {
     font-family: $opensans;
     font-weight: 800;
@@ -963,7 +958,7 @@ footer.footer {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;   
+    z-index: -1;
   }
   .banner-container {
   margin-top: 3em;
@@ -1020,7 +1015,7 @@ footer.footer {
         margin-bottom: 20px;
         font-size: 1.3em;
         margin-right:3.3em;
-      } 
+      }
       a {
         text-decoration: none;
         color: $pink;
@@ -1079,7 +1074,7 @@ footer.footer {
       padding-top: 30px;
     }
   }
- 
+
 }
 
 .underline-bold {
@@ -1126,7 +1121,7 @@ footer.footer {
     font-size:10em;
     text-transform: uppercase;
     font-family: $opensans;
-     
+
   }
    p {
       margin-top:20px;
@@ -1163,8 +1158,8 @@ footer.footer {
     box-shadow: none;
     font-family: $lato;
   }
-  input[type="text"], input[type="email"] {   
-    height:40px;  
+  input[type="text"], input[type="email"] {
+    height:40px;
   }
   textarea {
     height:150px;
@@ -1204,7 +1199,7 @@ footer.footer {
         margin: 50px auto;
         font-size: 2em;
         text-align:center;
-        
+
         &:first-of-type {
           font-style: italic;
         }
@@ -1248,7 +1243,7 @@ footer.footer {
   }
 
 
- 
+
 }
 
 // ---- Flexbox ----
@@ -1339,7 +1334,7 @@ footer.footer {
           -webkit-animation: moveMe 1s ease-in-out 1s forwards;
           animation: moveMe 1s ease-in-out 1s forwards;
         }
-        
+
       }
     }
   }
@@ -1401,7 +1396,7 @@ footer.footer {
   }
   .col-1-2:first-of-type{
     background: #FFA4A4;
-   
+
   }
 }
 
@@ -1425,7 +1420,7 @@ footer.footer {
   text-align: center;
   color:#5a756c;
 
-  
+
   h1 {
     font-size: 4em;
     padding: 10px;
@@ -1498,7 +1493,7 @@ footer.footer {
 }
 
 @media only screen and (max-width: 1125px) {
-  
+
   .port {
     .side-projects {
       .side-item {
@@ -1510,13 +1505,13 @@ footer.footer {
         width: 40%;
       }
     }
-    
+
     .websites {
       .website-item {
         width: 40%;
       }
     }
-    
+
     .academy-projects {
       .academy-project-item {
         width: 40%;
@@ -1526,7 +1521,7 @@ footer.footer {
 }
 
 @media only screen and (max-width: 870px) {
-  .port { 
+  .port {
 
    .side-projects {
       .side-item {
@@ -1538,13 +1533,13 @@ footer.footer {
         width: 95%;
       }
     }
-    
+
     .websites {
       .website-item {
         width: 95%;
       }
     }
-    
+
     .academy-projects {
       .academy-project-item {
         width: 95%;
@@ -1754,7 +1749,7 @@ footer.footer {
 // .port {
 //     background: rgba(84,85,92,0.5);
 //     z-index: -2;
-    
+
 
 // }
 
@@ -1770,7 +1765,7 @@ footer.footer {
 //     text-decoration: none;
 //     }
 //   }
-  
+
 // }
 
 // .port:after {
@@ -1785,11 +1780,11 @@ footer.footer {
 //   bottom: 0;
 //   right: 0;
 //   position: absolute;
-//   z-index: -1; 
+//   z-index: -1;
 // }
 
-// .dog-website { 
-  
+// .dog-website {
+
 //   height:50em;
 //   position:relative;
 
@@ -1811,11 +1806,11 @@ footer.footer {
 //   bottom: 0;
 //   right: 0;
 //   position: absolute;
-//   z-index: -1; 
+//   z-index: -1;
 // }
 
 // .music-website {
-  
+
 //   height:50em;
 //   position:relative;
 // }
@@ -1833,7 +1828,7 @@ footer.footer {
 //   bottom: 0;
 //   right: 0;
 //   position: absolute;
-//   z-index: -1; 
+//   z-index: -1;
 // }
 
 // .artist-website {
@@ -1854,7 +1849,7 @@ footer.footer {
 //   bottom: 0;
 //   right: 0;
 //   position: absolute;
-//   z-index: -1; 
+//   z-index: -1;
 
 // }
 
@@ -1876,7 +1871,7 @@ footer.footer {
 //   bottom: 0;
 //   right: 0;
 //   position: absolute;
-//   z-index: -1; 
+//   z-index: -1;
 
 // }
 
@@ -1888,7 +1883,7 @@ footer.footer {
 //     top:50%;
 //     border-bottom: 5px solid white;
 //     font-family: $opensans;
-    
+
 //   }
 //   h2, p {
 //     color:white;
@@ -1917,7 +1912,7 @@ footer.footer {
 //     color:$grey;
 //   }
 
-//   p { 
+//   p {
 //     margin: 100px auto;
 //     font-family: $opensans;
 //     font-size:1.5em;
