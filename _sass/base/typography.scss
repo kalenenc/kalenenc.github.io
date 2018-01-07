@@ -79,12 +79,12 @@ hr {
   color: $secondary-font-color;
 
   a {
-    color: $base-color;
+    color: $color-main;
 
     &:active,
     &:focus,
     &:hover  {
-      color: lighten($base-color, 20%);
+      color: lighten($color-main, 20%);
       outline: none;
     }
   }
