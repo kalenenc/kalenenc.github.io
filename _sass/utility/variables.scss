@@ -1,15 +1,18 @@
-// GLOBAL VARIABLES
-////////////////////////////////////////////////////////////////
-
-// Typography
+// Fonts
 $base-font-family: 'Open Sans', sans-serif;;
 $secondary-font-family: $base-font-family; //for now, there's just going to be one font
 
 // Sizes
-$max-width: 1300px;
+$max-width: 1200px;
 $base-spacing: 2rem;
 $small-spacing: $base-spacing / 2;
 $large-spacing: $base-spacing * 2;
+
+// Grid settings
+$small: 450px;
+$medium: 670px;
+$large: 900px;
+$extra-large: $max-width;
 
 // Colors
 $purple: #A380C8;
@@ -18,9 +21,9 @@ $light-grey: #afafaf;
 
 // Font colors
 $color-main: $purple;
-$font-color-main: $dark-grey;
-$font-color-light: $light-grey;
-$font-color-secondary: $color-main;
+$main-font-color: $dark-grey;
+$light-font-color: $light-grey;
+$secondary-font-color: $color-main;
 
 
 // Borders

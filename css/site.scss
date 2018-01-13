@@ -2,12 +2,24 @@
 
 ---
 
-//@import "reset";
-@import "";
-@import "header";
-@import "footer";
-@import "grid";
-//@import "all";
-@import "base/base";
+// ----- Utility -----
+@import "utility/variables";
+@import "utility/grid-settings";
 
-@import "main";
+
+// ----- Base -----
+@import "base/media";
+@import "base/typography";
+
+// ----- Layouts -----
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/grid";
+
+// ----- Modules -----
+
+// ----- Sections -----
+@import "sections/blog";
+@import "sections/home";
+
+// ----- Themes -----
