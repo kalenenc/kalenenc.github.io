@@ -1,10 +1,16 @@
 header {
+  margin-top: $small-spacing;
   .l-container {
     margin-top: 0;
   }
 
-  svg {
-    float: left;
-    width: 40%;
+
+
+}
+
+.l-crow {
+  grid-column: span 6;
+  @include media($medium) {
+    grid-column: span 4;
   }
 }

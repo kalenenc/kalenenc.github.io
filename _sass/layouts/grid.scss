@@ -9,6 +9,7 @@
   display: inline-block;
   max-width: $max-width;
   padding-right: $small-spacing / 2;
+
 }
 
 .l-full,
@@ -50,10 +51,13 @@
     position: relative;
     display: grid;
     max-width: $max-width;
-    padding: 0 $base-spacing;
+    padding: 0 $small-spacing;
     margin: $large-spacing auto;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: $base-spacing;
+    @include media($medium) {
+      padding: 0 $base-spacing;
+    }
   }
 
   .l-full,
