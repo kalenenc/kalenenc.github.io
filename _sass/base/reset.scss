@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 /**
  * Add the correct display in IE 9-.
  */

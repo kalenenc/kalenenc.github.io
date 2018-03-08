@@ -1,8 +1,8 @@
 .blog-section {
   @include green-gradient;
-  // background: $dark-teal;
   color: white;
   padding-bottom: $large-spacing;
+  margin-bottom: $large-spacing * 2;
   max-width: 100%;
   h2 {
     margin: $large-spacing auto;
@@ -27,19 +27,17 @@ table {
   }
 }
 
-.blog-date {
-//  width: 40%;
-}
 
-.blog-title {
-  //width: 60%;
-}
 
 //Actual blog template
 
 .blog.l-container {
   max-width: 900px;
   margin: 4rem auto;
+
+  .l-full {
+    padding: $small-spacing;
+  }
 
   h1 {
     color: $dark-teal;
@@ -50,6 +48,8 @@ table {
     font-size: 1.4em;
   }
 
+
+
 }
 
 .blog-nav {
@@ -59,6 +59,17 @@ table {
   padding: $small-spacing;
   h1 {
     text-align: center;
+    @media only screen and (max-width: 600px) {
+      float: right;
+      font-size: 1.5em;
+    }
+  }
+  &:after {
+    content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
   }
 }
 

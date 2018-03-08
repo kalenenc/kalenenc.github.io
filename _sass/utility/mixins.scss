@@ -9,3 +9,17 @@ background: -webkit-linear-gradient(-45deg, $teal 0%,$seafoam 100%); /* Chrome10
 background: linear-gradient(135deg, $teal 0%,$seafoam 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b597', endColorstr='#87e294',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+@mixin display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin grid-child ($col-start, $col-end, $row-start, $row-end) {
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start;
+  -ms-grid-row: $row-start;
+  -ms-grid-row-span: $row-end - $row-start;
+  grid-column: #{$col-start}/#{$col-end};
+  grid-row: #{$row-start}/#{$row-end};
+}
