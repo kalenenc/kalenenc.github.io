@@ -1,9 +1,8 @@
 ---
 layout: blog
-title: first post
+title: First Post
 category: posts
 date: 2016-09-18
-excerpt: "First blog post for my newly created website! I’m glad to have my website up and officially running! Getting the domain name figured out was a little bit trickier than I anticipated..."
 ---
 
 # First Post
