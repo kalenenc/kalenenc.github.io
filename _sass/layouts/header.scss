@@ -55,6 +55,7 @@ header.l-container {
   margin: $small-spacing auto;
   text-align: center;
   text-transform: uppercase;
+  padding: 0;
 
   li {
     list-style-type: none;
@@ -62,6 +63,12 @@ header.l-container {
   a  {
     color: white;
     font-size: 3em;
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($teal, 20%);
+      outline: none;
+    }
   }
 }
 
@@ -78,4 +85,5 @@ header.l-container {
     display: inline-block;
     list-style-type: none;
   }
+  
 }

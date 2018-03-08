@@ -1,11 +1,11 @@
 .blog-section {
   @include green-gradient;
   color: white;
-  padding-bottom: $large-spacing;
+  padding: $large-spacing $small-spacing;
   margin-bottom: $large-spacing * 2;
   max-width: 100%;
   h2 {
-    margin: $large-spacing auto;
+    margin-bottom: $base-spacing;
     text-align: center;
   }
 }
