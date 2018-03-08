@@ -52,7 +52,7 @@
     display: grid;
     max-width: $max-width;
     padding: 0 $small-spacing;
-    margin: $large-spacing auto;
+    margin: $large-spacing * 2 auto;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: $base-spacing;
     @include media($medium) {

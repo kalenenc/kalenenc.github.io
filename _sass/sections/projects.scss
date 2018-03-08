@@ -1,0 +1,9 @@
+.projects {
+  @include green-gradient;
+  color: white;
+  h2 {
+    margin: $large-spacing auto;
+    text-align: center;
+  }
+
+}

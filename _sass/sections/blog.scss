@@ -1,0 +1,41 @@
+.blog-section {
+  @include green-gradient;
+  color: white;
+  h2 {
+    margin: $large-spacing auto;
+    text-align: center;
+  }
+}
+
+//Actual blog template
+
+.blog.l-container {
+  max-width: 900px;
+  margin: 4rem auto;
+
+  h1 {
+    color: $dark-teal;
+    margin-bottom: $small-spacing / 2;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+}
+
+.blog-nav {
+  position: relative;
+  @include green-gradient;
+  color: white;
+  padding: $small-spacing;
+  h1 {
+    text-align: center;
+  }
+}
+
+.home-icon {
+  position: absolute;
+  top: $base-spacing;
+  left: $base-spacing;
+}
