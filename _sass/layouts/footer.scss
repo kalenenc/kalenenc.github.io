@@ -1,0 +1,20 @@
+footer {
+  text-align: center;
+  // @include green-gradient;
+  background: $dark-teal;
+  color: white;
+  padding: $base-spacing 0;
+}
+
+.social--footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0 $small-spacing;
+  }
+
+}

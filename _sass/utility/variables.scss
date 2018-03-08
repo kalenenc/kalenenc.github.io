@@ -1,0 +1,41 @@
+// Fonts
+$base-font-family: 'Open Sans', sans-serif;;
+$secondary-font-family: $base-font-family; //for now, there's just going to be one font
+
+// Sizes
+$max-width: 1200px;
+$base-spacing: 2rem;
+$small-spacing: $base-spacing / 2;
+$large-spacing: $base-spacing * 2;
+
+// Grid settings
+$small: 450px;
+$medium: 670px;
+$large: 900px;
+$extra-large: $max-width;
+
+// Colors
+$purple: #A380C8;
+$dark-grey: #4C4C4C;
+$light-grey: #afafaf;
+
+$dark-green: #234d20;
+$green: #36802d;
+$light-green: #77ab59;
+$lightest-green: #f0f7da;
+
+$teal: #46b597;
+$dark-teal: #2a9991;
+$seafoam: #87e294;
+
+// Font colors
+$color-main: $green;
+$main-font-color: $dark-grey;
+$light-font-color: $light-grey;
+$secondary-font-color: $color-main;
+
+
+// Borders
+$base-border-color: $color-main;
+$base-border-radius: 3px;
+$base-border: 1px solid $base-border-color;

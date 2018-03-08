@@ -1,0 +1,80 @@
+.blog-section {
+  @include green-gradient;
+  color: white;
+  padding-bottom: $large-spacing;
+  margin-bottom: $large-spacing * 2;
+  max-width: 100%;
+  h2 {
+    margin: $large-spacing auto;
+    text-align: center;
+  }
+}
+
+table {
+  margin: 0 auto;
+  td {
+    width: 50%;
+    padding: 0;
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+  }
+}
+
+
+
+//Actual blog template
+
+.blog.l-container {
+  max-width: 900px;
+  margin: 4rem auto;
+
+  .l-full {
+    padding: $small-spacing;
+  }
+
+  h1 {
+    color: $dark-teal;
+    margin-bottom: $small-spacing / 2;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+
+
+}
+
+.blog-nav {
+  position: relative;
+  @include green-gradient;
+  color: white;
+  padding: $small-spacing;
+  h1 {
+    text-align: center;
+    @media only screen and (max-width: 600px) {
+      float: right;
+      font-size: 1.5em;
+    }
+  }
+  &:after {
+    content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+}
+
+.home-icon {
+  position: absolute;
+  top: $base-spacing;
+  left: $base-spacing;
+}

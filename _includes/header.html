@@ -1,21 +1,42 @@
-<header class="header">
-	<h1><a href="{{site.url}}">Kalene</a></h1>
-	<nav>
-	<div class="nav-icon">
-		<div class="span"></div>
-	</div>
-		<ul>
-			<li><a href="{{site.url}}/about">About</a></li>
-			<li><a href="{{site.url}}/portfolio">Portfolio</a></li>
-			<li><a href="{{site.url}}/doodles">Doodles</a></li>
-			<li class="li"><a href="{{site.url}}/blog">Blog</a></li>
-			<li class="li"><a href="{{site.url}}/../files/resume.pdf">Resume</a></li>
-			<li class="li"><a href="{{site.url}}/contact">Contact</a></li>
-		</ul>
+<header class="l-container">
 
-	</nav>
+    <div class="l-split header-left">
+      <div class="header-left__content">
+        <div class="l-crow">
+          {% include crow-svg.svg %}
+        </div>
 
-	<a href="{{site.url}}">{% include bee.html %}</a>
-	<p>Web developer, lifelong learner.</p>
+        <h1 style="text-align: center; color: #2a9991;">Kalene Csefalvay</h1>
+        <div class="header-desc">
+          <h4>Web developer, designer, lifelong learner, bird lady.</h4>
+          <h4>I fux with JavaScript.</h4>
+          <h4>Sometimes I write about my coding journey and what I'm working on.</h4>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="l-split header-right">
+
+
+
+
+          <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="mailto:kalenenc@gmail.com">Contact</a></li>
+          </ul>
+
+          {% include social-header.html %}
+
+
+
+    </div>
+
+
+
+
+    </div>
 
 </header>
