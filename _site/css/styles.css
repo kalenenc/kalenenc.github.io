@@ -996,7 +996,7 @@ label {
     opacity: 0.7; }
 
 .replay-image {
-  background-image: url("https://kalenenc.github.io/../photos/replayfx.png");
+  background-image: url("http://localhost:4000/../photos/replayfx.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1006,7 +1006,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .calc-image {
-  background-image: url("https://kalenenc.github.io/../photos/calculator.png");
+  background-image: url("http://localhost:4000/../photos/calculator.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1016,7 +1016,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .game {
-  background-image: url("https://kalenenc.github.io/../photos/gameoflife.png");
+  background-image: url("http://localhost:4000/../photos/gameoflife.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1026,7 +1026,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .trello {
-  background-image: url("https://kalenenc.github.io/../photos/trello.jpg");
+  background-image: url("http://localhost:4000/../photos/trello.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1036,7 +1036,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .roman {
-  background-image: url("https://kalenenc.github.io/../photos/romannumerals.png");
+  background-image: url("http://localhost:4000/../photos/romannumerals.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1046,7 +1046,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .buzz {
-  background-image: url("https://kalenenc.github.io/../photos/buzzfeed.jpg");
+  background-image: url("http://localhost:4000/../photos/buzzfeed.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1056,7 +1056,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .wikipedia {
-  background-image: url("https://kalenenc.github.io/../photos/wikipedia.png");
+  background-image: url("http://localhost:4000/../photos/wikipedia.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1066,7 +1066,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .weather {
-  background-image: url("https://kalenenc.github.io/../photos/weather.png");
+  background-image: url("http://localhost:4000/../photos/weather.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1076,7 +1076,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .quotegenerator {
-  background-image: url("https://kalenenc.github.io/../photos/quotegenerator.png");
+  background-image: url("http://localhost:4000/../photos/quotegenerator.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1086,7 +1086,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .toxins {
-  background-image: url("https://kalenenc.github.io/../photos/schooltoxins.png");
+  background-image: url("http://localhost:4000/../photos/schooltoxins.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1096,7 +1096,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .music-port {
-  background-image: url("https://kalenenc.github.io/../photos/music-website.png");
+  background-image: url("http://localhost:4000/../photos/music-website.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1106,7 +1106,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .dog-port {
-  background-image: url("https://kalenenc.github.io/../photos/dog-website.png");
+  background-image: url("http://localhost:4000/../photos/dog-website.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1116,7 +1116,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .chelyport {
-  background-image: url("https://kalenenc.github.io/../photos/chelychee.png");
+  background-image: url("http://localhost:4000/../photos/chelychee.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1126,7 +1126,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .dancingflower {
-  background-image: url("https://kalenenc.github.io/../photos/dancingflower.png");
+  background-image: url("http://localhost:4000/../photos/dancingflower.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1136,7 +1136,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .ghost {
-  background-image: url("https://kalenenc.github.io/../photos/ghost.png");
+  background-image: url("http://localhost:4000/../photos/ghost.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -1146,7 +1146,7 @@ label {
   border: 1px solid #95AAA3; }
 
 .candycorn {
-  background-image: url("https://kalenenc.github.io/../photos/candycorn.png");
+  background-image: url("http://localhost:4000/../photos/candycorn.png");
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
